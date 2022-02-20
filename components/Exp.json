@@ -1,0 +1,84 @@
+{
+    "Experience": [
+        {
+            "name": "Novidys",
+            "data": {
+                "Title": "Novidy's",
+                "Date": "2015-2016",
+                "Duree": {
+                    "fr": "Stage de 3 semaines",
+                    "en": "Traineeship of 3 weeks"
+                },
+                "Do": {
+                    "fr": "Cybersécurité",
+                    "en": "Cyber-security"
+                },
+                "Description": {
+                    "fr": "Aide au support concernant les problèmes des utilisateurs de leur logiciel",
+                    "en": "Helping and supporting users with issues with their software"
+                },
+                "Link": "https://www.csnovidys.com/"
+            }
+        },
+        {
+            "name": "Eurocom",
+            "data": {
+                "Title": "Eurocom",
+                "Date": "2015-2016",
+                "Duree": {
+                    "fr": "Stage de 3 semaines",
+                    "en": "Traineeship of 3 weeks"
+                },
+                "Do": {
+                    "fr": "Télécom & Réseaux",
+                    "en": "Telecom & Networks"
+                },
+                "Description": {
+                    "fr": "Mise en place du réseau informatique d'une entreprise",
+                    "en": "Setting up a company's computer network"
+                },
+                "Link": "https://www.justacote.com/saint-fargeau-ponthierry-77310/electricien/eurocom-services-948114.htm"
+            }
+        },
+        {
+            "name": "DiotaSoft",
+            "data": {
+                "Title": "DiotaSoft",
+                "Date": "2017-2018",
+                "Duree": {
+                    "fr": "Stage de 3 semaines",
+                    "en": "Traineeship of 3 weeks"
+                },
+                "Do": {
+                    "fr": "Modélisation 3D",
+                    "en": "3D modeling"
+                },
+                "Description": {
+                    "fr": "Observation de la conception de caméra 3D, aide à la refonte du site internet de l'entreprise",
+                    "en": "Observation of the 3D camera design, help and support with the redesign of the company's website"
+                },
+                "Link": "https://www.diota.com/fr/"
+            }
+        },
+        {
+            "name": "MillVap",
+            "data": {
+                "Title": "Mill'Vap",
+                "Date": "2020-2022",
+                "Duree": {
+                    "fr": "1 mois | Formation",
+                    "en": "1 month | Formation"
+                },
+                "Do": {
+                    "fr": "Vapo Shop",
+                    "en": "Vapo Shop"
+                },
+                "Description": {
+                    "fr": "Aide de la conception d'un site d'e-commerce à l'aide de shopify",
+                    "en": "Help to design an e-commerce site using shopify"
+                },
+                "Link": "https://www.facebook.com/Mill-Vap-356077231640627/"
+            }
+        }
+    ]
+}

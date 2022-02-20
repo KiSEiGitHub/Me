@@ -1,0 +1,216 @@
+{
+  "Skills": [
+    {
+      "FR": {
+        "Title": "Python",
+        "Desc": "Le premier langage que j'ai appris. Python est pour moi ma base dans le domaine de la programmation depuis 6 ans. Aujourd'hui j'utilise Django pour le back-end de mes sites et aussi des modules comme par exemple numpy ou jupyterlab pour la datascience où je suis encore novice.",
+        "Value": "85",
+        "Delay": "0.3"
+      },
+      "EN": {
+        "Title": "Python",
+        "Desc": "The first language I learned.  Python has been the foundation of my knowledge in the field of programming for 6 years. Today, I use Django for the back-end of my websites, and I also use modules such as numpy or jupyterlab for datascience where I am still inexperienced."
+      }
+    },
+    {
+      "FR": {
+        "Title": "Développement web",
+        "Desc": "J'ai commencé à apprendre la base du développement web au début de mon lycée avec le html, css et javascript. À la base ce que j'aime faire c'est programmer, mais il me fallait impérativement des connaissances afin d'aller plus loin en tant que développeur front end.",
+        "Value": "75",
+        "Delay": "0.4"
+      },
+      "EN": {
+        "Title": "Web development",
+        "Desc": "I started to learn the basics of web development at the beginning of my high school years with html, css and javascript. Basically, what I like to do is to program, but I absolutely needed knowledge in order to go further as a front end developer."
+      }
+    },
+    {
+      "FR": {
+        "Title": "PHP",
+        "Desc": "PHP est le premier langage de programmation back-end d'un site que j'ai appris, je l'utilise beaucoup avec wamp serveur qui a pour but de simuler un serveur local, j'ai appris les requête sql, et pour finir les requêtes sql faite en php. La création d'un formulaire en html, envoi des données vers la base de données en php/sql est maitrisée.",
+        "Value": "65",
+        "Delay": "0.5"
+      },
+      "EN": {
+        "Title": "PHP",
+        "Desc": "PHP is the first back-end website programming language I learned; I use it a lot with wamp server, which aims to simulate a local server. Moreover, I learned the sql requests and I ascertained to finish the sql queries made in php. I, now, master the creation of a html form and the sending of data to the database in php/sql as well."
+      }
+    },
+    {
+      "FR": {
+        "Title": "React",
+        "Desc": "React est le framework front end le plus connu et le plus utilisé, je ne pouvais passer à côté. Ce framework utilise le langage JavaScript qui est le langage de programmation principale du web. Pouvoir programmer tout en faisant des sites internet me plaît énormément j'ai alors décidé de faire de React qui en est devenue ma compétences principale.",
+        "Value": "55",
+        "Delay": "0.6"
+      },
+      "EN": {
+        "Title": "React",
+        "Desc": "I could not not talk about React, the best known and most used front end framework. This framework uses the JavaScript language, which is the main programming language of the web. Being able to program and to create websites at the same time highly pleases me, this is why I decided to make React my main skill."
+      }
+    }
+  ],
+  "Other": {
+    "Story": {
+      "FR": "Je me suis essentiellement formé sur internet par le biais de vidéos sur youtube ou de formation en ligne. Je me suis entrainer à 'cloner' diverse chose pour une question d'entrainement. J'ai appris entre temps les frameworks javaScript comme React.js ou Next.js. Aujourd'hui le front-end est ma principale compétence.",
+      "EN": "I mainly trained myself on the Internet through videos on youtube or online training. I practiced to “clone” in computing various things. In the meantime, I learned javaScript frameworks like React.js or Next.js. Today, the front-end is my main skill."
+    },
+    "QuickView": {
+      "FR": "J'ai cité pas mal de compétence en haut, mais voici une vue d'ensemble de ce que j'utilise quand je fais du web développement.",
+      "EN": "i have listed many skills at the top of the page but here you are a quick view of all my tools that i use for the web debeloppement."
+    },
+    "AboutText": {
+      "FR": "je m'intéresse principalement a l'informatique, plus précisément à la programmation. Développer des algorithmes ou des projets personnels utilisant le framework React ou Next font partie de mes principales compétences",
+      "EN": "I am mainly interested in computer science, more precisely in the field of programming. Developing algorithms and personal projects with the use of the React or Next framework are part of my main skills."
+    }
+  },
+  "Experience": [
+    {
+      "FR": {
+        "Title": "Eurocom",
+        "Data": "2015-2016",
+        "Duree": "Stage de 3 semaines",
+        "Do": "Télécom & Réseaux",
+        "Desc": "Mise en place du réseau informatique d'une entreprise",
+        "EntrepriseLink": "https://www.justacote.com/saint-fargeau-ponthierry-77310/electricien/eurocom-services-948114.htm",
+        "NextLink" : "/Experience/Eurocom"
+      },
+      "EN": {
+        "Title": "Eurocom",
+        "Data": "2015-2016",
+        "Duree": "Traineeship of 3 weeks",
+        "Do": "Telecom & Networks",
+        "Desc": "Setting up a company's computer network",
+        "EntrepriseLink": "https://www.justacote.com/saint-fargeau-ponthierry-77310/electricien/eurocom-services-948114.htm"
+      }
+    },
+    {
+      "FR": {
+        "Title": "Novidy's",
+        "Data": "2015-2016",
+        "Duree": "Stage de 3 semaines",
+        "Do": "Cybersécurité",
+        "Desc": "Aide au support concernant les problèmes des utilisateurs de leur logiciel",
+        "EntrepriseLink": "https://www.csnovidys.com/",
+        "NextLink" : "/Experience/Novidys"
+      },
+      "EN": {
+        "Title": "Novidy's",
+        "Data": "2015-2016",
+        "Duree": "Traineeship of 3 weeks",
+        "Do": "Cyber-security",
+        "Desc": "Helping and supporting users with issues with their software",
+        "EntrepriseLink": "https://www.csnovidys.com/"
+      }
+    },
+    {
+      "FR": {
+        "Title": "DiotaSoft",
+        "Data": "2017-2018",
+        "Duree": "Stage de 3 semaines",
+        "Do": "Modélisation 3D",
+        "Desc": "Observation de la conception de caméra 3D, aide à la refonte du site internet de l'entreprise",
+        "EntrepriseLink": "https://www.diota.com/fr/",
+        "NextLink" : "/Experience/DiotaSoft"
+      },
+      "EN": {
+        "Title": "DiotaSoft",
+        "Data": "2017-2018",
+        "Duree": "Traineeship of 3 weeks",
+        "Do": "3D modeling",
+        "Desc": " Observation of the 3D camera design, help and support with the redesign of the company's website",
+        "EntrepriseLink": "https://www.diota.com/fr/"
+      }
+    },
+    {
+      "FR": {
+        "Title": "Mill'Vap",
+        "Data": "2020-2020",
+        "Duree": "1 mois | Formation",
+        "Do": "Vapo Shop",
+        "Desc": "Aide de la conception d'un site d'e-commerce à l'aide de shopify",
+        "EntrepriseLink": "https://www.facebook.com/Mill-Vap-356077231640627/",
+        "NextLink" : "/Experience/MillVap"
+      },
+      "EN": {
+        "Title": "Mill'Vap",
+        "Data": "2020-2020",
+        "Duree": "1 month | Formation",
+        "Do": "Vape Shop",
+        "Desc": "Help to design an e-commerce site using shopify",
+        "EntrepriseLink": "https://www.facebook.com/Mill-Vap-356077231640627/"
+      }
+    }
+  ],
+  "Like": [
+    {
+      "FR": {
+        "Title": "Golf",
+        "Desc": "Ayant un père ancien joueur professionnel de golf puis à son tour professeur, je baigne dans le golf depuis tout petit. J'ai fait beaucoup de compétition en France. À l'âge de treize ans, j'étais classé 13 d'index. Aujourd'hui, je joue pour le plaisir de sortir et de prendre l'air."
+      },
+      "EN": {
+        "Title": "Golf",
+        "Desc": "I started to play golf at an early age because my dad was a professional golf player before becoming a golf teacher. I played a lot of competitions in France as a grew up. When I was 13, I reached the index of 13. Today, I play golf as a hobby because I like to go outside to get some fresh air."
+      }
+    },
+    {
+      "FR": {
+        "Title": "Musique",
+        "Desc": "Je passe la plupart de mon temps à développer des projets personnels ou bien travailler mes cours en écoutant de la musique. J'écoute plein de styles différents, mais mon style préféré reste les musiques instrumentales qui ont pour effet le développement de ma concentration."
+      },
+      "EN": {
+        "Title": "Music",
+        "Desc": "I spend most of my time developing personal projects and working on my schoolwork while listening to background music. I listen to many different genres, but my favorite one remains instrumental music, which has for positive consequences to develop my psychological skills and to increase my focus. "
+      }
+    },
+    {
+      "FR": {
+        "Title": "Programmation",
+        "Desc": "J'ai découvert la programmation en 2013 en même temps que le jeu mondialement connu Minecraft. En même temps d'y jouer je cherchais surtout à savoir comment tout cela marchait. J'avais donc commencé avec le Java. Avec le temps, j'ai découvert plein d'autre langage, mes principales compétences aujourd'hui sont Python et le Framework React."
+      },
+      "EN": {
+        "Title": "Programmation",
+        "Desc": "I discovered the field of programming  back in 2013 at the same time as the famous game Minecraft. As I was playing this video game, I was mainly trying to find out how it all worked. So, I began with Java. Over time, I discovered many other languages, and today, my main skills are Python and the React Framework."
+      }
+    },
+    {
+      "FR": {
+        "Title": "Jeux vidéo",
+        "Desc": "Durant mon adolescence, j'ai passé beaucoup de temps sur les jeux vidéos. Aujourd'hui je joue certes, beaucoup moins mais je reste très content de m'accorder ces temps lors de mes temps libres."
+      },
+      "EN": {
+        "Title": "Videos games",
+        "Desc": "During my adolescence, I spent a lot of time playing and exploring video games. Today, I still like to play video games, but a lot less. I am very happy to allow myself to do that during my free time because it is a source of relaxation and entertainment. "
+      }
+    }
+  ],
+  "Projet": {
+    "AirTrack": {
+      "DescriptionProjet": {
+        "FR": "AirTrack est un projet de groupe sur le thème de la gestion des pilotes d'air France qui nous a été donné pour notre examen blanc du BTS.",
+        "EN": "AirTrack is a group project which theme is the management of Air France pilots. This theme was the main topic of our BTS exam."
+      },
+      "Task": {
+        "FR": "Dans ce projet, nous devons utiliser des bases de données MySQL pour pouvoir stocker toutes les informations concernant les tables : ",
+        "FR2": "Faire le formulaire pour pouvoir insérer un vol, un pilote, un aéroport ou un avion, et faire leur page associée pour pouvoir afficher les éléments présents dans chaque table",
+        "EN": "In this group project, we have to use My SQL databases in order to store all the information about the tables : ",
+        "EN2": "Create a form to insert a flight, a pilot, an airport or a plane, and their associated pages to be able to display the present elements in each table"
+      }
+    },
+    "Portfolio": {
+      "Description": {
+        "FR": "React est le framework JavaScript optimisé pour la création d'application web monopage. J'ai choisis de faire de mon portfolio une application web multi-page. C'est donc pour ça que j'ai utilisé Next.js qui offre la possiblité de faire du rooting nativement.",
+        "EN": "React is the optimized JavaScript framework which is the best for mono-page rendering. I have decided than my portfolio will be a multi-page web application. Ichose Next.js which has the native rooting."
+      },
+      "Librairies": {
+        "FR": "Lors de ma formation sur React et Next, j'ai découvert plusieurs librairie comme : ",
+        "FR2": "Que j'ai appris sur le tas en faisant ce portfolio. Aujourd'hui, je les maîtrise assez bien et je peux les utiliser sans trop regarder dans les docs.",
+        "EN": "During my React and Next formation, i have discovered many librarys like : ",
+        "EN2": "That i learned while making this portfolio. Today, i can use them wthout see alaways the documentation."
+      },
+      "Update": {
+        "FR": "Ce portfolio est voué à changer, j'ai apporterai des mises à jour quand j'aurai de nouvelle chose à vous présentez. Vous pourrez retrouver les nouveautées avenir sur le lien en dessous.",
+        "EN": "This portfolio is destined to change in the futur. You can check on the link below the new and the update which is incomming."
+      }
+    }
+  }
+}
