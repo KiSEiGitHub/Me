@@ -78,7 +78,7 @@ const Navbar = () => {
                 </Link>
                 <Link href = "/Projets" passHref>
                     <Box
-                        backgroundColor = {router.pathname === '/Projet' ? '#88CCCA' : ''}
+                        backgroundColor = {router.pathname === '/Projets' ? '#88CCCA' : ''}
                         p = {1}
                         color = {router.pathname === '/Projets' ? 'black' : ''}
                         cursor = "pointer"

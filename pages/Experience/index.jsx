@@ -44,7 +44,7 @@ const Projet = (props) => {
 export default Projet
 
 export async function getStaticProps() {
-    const data = await import('../../components/Exp.json')
+    const data = await import('../../Json/Exp.json')
     const array = data.Experience
 
     return {
