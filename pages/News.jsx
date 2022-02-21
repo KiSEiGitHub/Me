@@ -12,7 +12,18 @@ const News = () => {
     return (
         <>
             <Container variant = "Main">
-                <Section delay = {0.2}>
+                <Section delay={0.2}>
+                    <SectionTitle>21/02/2022</SectionTitle>
+                    <UnorderedList>
+                        <ListItem>
+                            {toggleLang
+                                ? "Accordéon pour la partie ❤️ en mode téléphone"
+                                : "Accordion for the ❤️ section on mobile"
+                            }
+                        </ListItem>
+                    </UnorderedList>
+                </Section>
+                <Section delay = {0.3}>
                     <SectionTitle>08/02/2022</SectionTitle>
                     <UnorderedList>
                         <ListItem>
@@ -39,7 +50,7 @@ const News = () => {
                     </UnorderedList>
                 </Section>
                 
-                <Section delay = {0.3}>
+                <Section delay = {0.4}>
                     <SectionTitle>07/02/2022</SectionTitle>
                     <UnorderedList>
                         <ListItem>
