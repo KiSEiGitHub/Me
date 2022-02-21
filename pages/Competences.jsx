@@ -16,7 +16,7 @@ const Competences = () => {
         <>
             <Section delay = {0.2}>
                 <Box
-                    m = "90px auto 10px"
+                    m = "100px auto 10px"
                     p = "25px"
                     w = {{ md : '500px', lg : '700px' }}
                 >

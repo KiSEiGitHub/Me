@@ -1,11 +1,11 @@
 import { createContext, useState } from 'react';
-import Data from '../components/Data.json';
+import Data from '../Json/Data.json';
 
 export const TextContext = createContext(undefined);
 
 export default function ContextText({ children }) {
     
-    const Data = require('../components/Data.json');
+    const Data = require('../Json/Data.json');
     const DataSkill = Data.Skills;
     const DataExps = Data.Experience;
     const DataLikes = Data.Like;

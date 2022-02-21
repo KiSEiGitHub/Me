@@ -21,6 +21,12 @@ const News = () => {
                                 : "Accordion for the ❤️ section on mobile"
                             }
                         </ListItem>
+                        <ListItem>
+                            {toggleLang
+                                ? "Page projet retravaillé"
+                                : "Rework project page"
+                            }
+                        </ListItem>
                     </UnorderedList>
                 </Section>
                 <Section delay = {0.3}>

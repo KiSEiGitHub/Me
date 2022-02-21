@@ -78,7 +78,7 @@ export default Entreprise;
 
 export async function getStaticProps(context) {
     const slug = context.params.entreprise;
-    const data = await import('../../components/Exp.json');
+    const data = await import('../../Json/Exp.json');
     const entrepriseEnCours = data.Experience.find(ent => ent.name === slug);
     
     if (!entrepriseEnCours) {
@@ -95,7 +95,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-    const data = await import('../../components/Exp.json');
+    const data = await import('../../Json/Exp.json');
     const paths = data.Experience.map((item) => ( {
         params : { entreprise : item.name }
     } ));
