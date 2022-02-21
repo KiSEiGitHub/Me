@@ -80,7 +80,7 @@ const Navbar = () => {
                     <Box
                         backgroundColor = {router.pathname === '/Projet' ? '#88CCCA' : ''}
                         p = {1}
-                        color = {router.pathname === '/Projet' ? 'black' : ''}
+                        color = {router.pathname === '/Projets' ? 'black' : ''}
                         cursor = "pointer"
                     >
                         {toggleLang ? 'Projets' : 'Projects'}
@@ -124,7 +124,7 @@ const Navbar = () => {
                             </Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link href = {'/Projet'}>
+                            <Link href={'/Projets'}>
                                 {toggleLang ? 'Projets' : 'Projects'}
                             </Link>
                         </MenuItem>
