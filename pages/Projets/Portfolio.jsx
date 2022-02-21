@@ -27,7 +27,7 @@ const Portfolio = () => {
                     </Box>
                     <Box>
                         <Tag mr = {2}>Source</Tag>
-                        <ExtLink href = "https://github.com/KiSEiGitHub/portfolio-next">
+                        <ExtLink href = "https://github.com/KiSEiGitHub/Me">
                             Github
                         </ExtLink>
                     </Box>
