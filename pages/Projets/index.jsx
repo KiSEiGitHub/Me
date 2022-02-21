@@ -146,12 +146,15 @@ const Projet = () => {
                     maxW = "900px"
                     p = {5}
                 >
-                    <SectionTitle>
+                    <Text
+                        variant="section-title"
+                        textAlign={BreakPoint ? '' : 'center'}
+                    >
                         {toggleLang
-                            ? 'Projets console'
-                            : 'Console projects'
+                            ? "Projets console"
+                            : "Console projects"
                         }
-                    </SectionTitle>
+                    </Text>
                     <Box
                         d = "flex"
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
