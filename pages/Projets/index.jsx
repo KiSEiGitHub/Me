@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import { Box, Container, Divider, LinkBox, SimpleGrid, Text } from '@chakra-ui/react';
-import Section from '../Layout/Section';
-import { LangContext } from '../Hook/LangContext';
-import { GridItem } from '../components/Griditem';
+import Section from '../../Layout/Section';
+import { LangContext } from '../../Hook/LangContext';
+import { GridItem } from '../../components/Griditem';
 
-import PPE from '../public/Image/Project/AirTrack/airtrack-logo.png';
-import { SectionTitle } from '../Layout/CustomText';
+import PPE from '../../public/Image/Project/AirTrack/airtrack-logo.png';
+import { SectionTitle } from '../../Layout/CustomText';
 
 const Projet = () => {
     

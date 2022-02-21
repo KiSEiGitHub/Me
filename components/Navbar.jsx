@@ -76,7 +76,7 @@ const Navbar = () => {
                         {toggleLang ? 'Expériences' : 'Experiences'}
                     </Box>
                 </Link>
-                <Link href = "/Projet" passHref>
+                <Link href = "/Projets" passHref>
                     <Box
                         backgroundColor = {router.pathname === '/Projet' ? '#88CCCA' : ''}
                         p = {1}
