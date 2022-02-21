@@ -1,5 +1,6 @@
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
 import {
+    Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel,
     Box,
     Button,
     Container,
@@ -160,36 +161,74 @@ const Home = () => {
             {/* Like */}
             <Section delay = {0.5}>
                 <SectionTitle>❤️</SectionTitle>
-                {DataLikes.map((ele) => <>
-                    <Popover>
-                        <PopoverTrigger>
-                            <Button variant = "ButtonLike">
-                                {toggleLang
-                                    ? ele[ 'FR' ][ 'Title' ]
-                                    : ele[ 'EN' ][ 'Title' ]
-                                }
-                                <Box>
-                                    <ChevronRightIcon />
-                                </Box>
-                            </Button>
-                        </PopoverTrigger>
-                        <PopoverContent>
-                            <PopoverArrow />
-                            <PopoverBody
-                                p = "5"
-                                color = {colorMode === 'light' ? '#56575d' : '#e5e5e5'}
-                                bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}
-                            >
-                                <Para>
-                                    {toggleLang
-                                        ? ele[ 'FR' ][ 'Desc' ]
-                                        : ele[ 'EN' ][ 'Desc' ]
-                                    }
-                                </Para>
-                            </PopoverBody>
-                        </PopoverContent>
-                    </Popover>
-                </>)}
+                {/* Rendu PC */}
+                <Box d = {{ sm : 'none', md : 'block' }}>
+                    {DataLikes.map((ele) => <>
+                            <Popover>
+                                <PopoverTrigger>
+                                    <Button variant = "ButtonLike">
+                                        {toggleLang
+                                            ? ele[ 'FR' ][ 'Title' ]
+                                            : ele[ 'EN' ][ 'Title' ]
+                                        }
+                                        <Box>
+                                            <ChevronRightIcon />
+                                        </Box>
+                                    </Button>
+                                </PopoverTrigger>
+                                <PopoverContent>
+                                    <PopoverArrow />
+                                    <PopoverBody
+                                        p = "5"
+                                        color = {colorMode === 'light' ? '#56575d' : '#e5e5e5'}
+                                        bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}
+                                    >
+                                        <Para>
+                                            {toggleLang
+                                                ? ele[ 'FR' ][ 'Desc' ]
+                                                : ele[ 'EN' ][ 'Desc' ]
+                                            }
+                                        </Para>
+                                    </PopoverBody>
+                                </PopoverContent>
+                            </Popover>
+                        </>
+                    )}
+                </Box>
+                
+                {/* Rendu Portable */}
+                <Box d = {{ sm : 'block', md : 'none' }}>
+                    {DataLikes.map((ele) =>
+                        <>
+                            <Accordion allowToggle>
+                                <AccordionItem>
+                                    <h2>
+                                        <AccordionButton>
+                                            <Box
+                                                flex = "1"
+                                                textAlign = "left"
+                                                color={colorMode === 'light' ? '#626267' : 'teal.200'}
+                                                fontWeight={700}
+                                            >
+                                                {toggleLang
+                                                    ? ele[ 'FR' ][ 'Title' ]
+                                                    : ele[ 'EN' ][ 'Title' ]
+                                                }
+                                            </Box>
+                                            <AccordionIcon />
+                                        </AccordionButton>
+                                    </h2>
+                                    <AccordionPanel pb = {4} textAlign='justify'>
+                                        {toggleLang
+                                            ? ele[ 'FR' ][ 'Desc' ]
+                                            : ele[ 'EN' ][ 'Desc' ]
+                                        }
+                                    </AccordionPanel>
+                                </AccordionItem>
+                            </Accordion>
+                        </>
+                    )}
+                </Box>
             </Section>
             {/* Like */}
             
