@@ -3,18 +3,18 @@ import {
     Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel,
     Box,
     Button,
-    Container,
-    Icon,
+    Container, Flex,
+    Icon, Input, InputGroup, InputLeftAddon, InputRightAddon,
     Popover,
     PopoverArrow,
     PopoverBody,
     PopoverContent,
     PopoverTrigger,
     Text,
-    useBoolean,
+    useBoolean, useClipboard,
     useColorMode
 } from '@chakra-ui/react';
-import { useContext, useRef } from 'react';
+import { useContext, useRef, useState } from 'react';
 import { BsFillPhoneFill } from 'react-icons/bs';
 import { ImLinkedin } from 'react-icons/im';
 import { IoLogoGithub } from 'react-icons/io5';
@@ -33,6 +33,7 @@ import {
 import Section from '../Layout/Section';
 import { TextContext } from '../Hook/TextContext';
 import Formation from '../components/Formation';
+import { Functioncontext } from '../Hook/FunctionContext';
 
 const Home = () => {
     
@@ -42,6 +43,10 @@ const Home = () => {
     const [flag, setFlag] = useBoolean();
     const { Data } = useContext(TextContext);
     const { DataLikes } = useContext(TextContext);
+    const [value, setValue] = useState('tom.lau.974@gmail.com');
+    const { hasCopied, onCopy } = useClipboard(value);
+    
+    const {Copie, valuetwo, isCopied} = useContext(Functioncontext)
     
     return ( <>
         <Container variant = "Main" ref = {imgRef}>
@@ -207,8 +212,8 @@ const Home = () => {
                                             <Box
                                                 flex = "1"
                                                 textAlign = "left"
-                                                color={colorMode === 'light' ? '#626267' : 'teal.200'}
-                                                fontWeight={700}
+                                                color = {colorMode === 'light' ? '#626267' : 'teal.200'}
+                                                fontWeight = {700}
                                             >
                                                 {toggleLang
                                                     ? ele[ 'FR' ][ 'Title' ]
@@ -218,7 +223,7 @@ const Home = () => {
                                             <AccordionIcon />
                                         </AccordionButton>
                                     </h2>
-                                    <AccordionPanel pb = {4} textAlign='justify'>
+                                    <AccordionPanel pb = {4} textAlign = "justify">
                                         {toggleLang
                                             ? ele[ 'FR' ][ 'Desc' ]
                                             : ele[ 'EN' ][ 'Desc' ]
@@ -269,25 +274,42 @@ const Home = () => {
                 <SectionTitle>
                     {toggleLang ? 'Sinon' : 'Otherwise'}
                 </SectionTitle>
-                <Text pos = "relative" left = "15px">
-                    <BioYear>
-                        <EmailIcon />
-                    </BioYear>
-                    <Text variant = "Para" d = "inline">
-                        tom.lau.974@gmail.com
-                    </Text>
-                </Text>
-                
-                <Text pos = "relative" left = "15px">
-                    <Box d = "flex">
-                        <BioYear>
-                            <BsFillPhoneFill />
-                        </BioYear>
-                        <Text variant = "Para">
-                            {toggleLang ? '06 75 98 14 30' : '+33 6 75 98 14 30'}
-                        </Text>
-                    </Box>
-                </Text>
+                <Flex mb = {2}>
+                    <InputGroup>
+                        {/* eslint-disable-next-line react/no-children-prop */}
+                        <InputLeftAddon children = {<EmailIcon />} />
+                        <Input value = {value} isReadOnly />
+                        {/* eslint-disable-next-line react/no-children-prop */}
+                        {/*<InputRightAddon children = "@gmail.com"/>*/}
+                    </InputGroup>
+                    <Button onClick = {onCopy} ml = {2} colorScheme='teal'>
+                        {hasCopied
+                            ? toggleLang
+                                ? 'Coller'
+                                : 'Copied'
+                            : toggleLang
+                                ? 'Copier'
+                                : 'Copy'
+                        }
+                    </Button>
+                </Flex>
+                <Flex mb = {2}>
+                    <InputGroup>
+                        {/* eslint-disable-next-line react/no-children-prop */}
+                        <InputLeftAddon children = {<BsFillPhoneFill />} />
+                        <Input value = {valuetwo} isReadOnly />
+                    </InputGroup>
+                    <Button onClick = {() => Copie(valuetwo)} ml = {2} colorScheme='teal'>
+                        {isCopied
+                            ? toggleLang
+                                ? 'Coller'
+                                : 'Copied'
+                            : toggleLang
+                                ? 'Copier'
+                                : 'Copy'
+                        }
+                    </Button>
+                </Flex>
             </Section>
         </Container>
     </> );
