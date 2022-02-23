@@ -61,16 +61,23 @@ const Navbar = () => {
             </Tooltip>
             {/* eslint-disable-next-line @next/next/link-passhref */}
             <Link href = "/">
-                <TomTitle>Tom</TomTitle>
+                <Box
+                    textDecoration = {router.pathname === '/' ? 'underline' : ''}
+                    textUnderlineOffset = {4}
+                >
+                    <TomTitle>Tom</TomTitle>
+                </Box>
             </Link>
             <HStack spacing = {2} d = {{ sm : 'none', md : 'flex' }} alignItems = "center" h = "40px"
                     justifyContent = "center">
                 
                 <Link href = "/Experience" passHref>
                     <Box
-                        backgroundColor = {router.pathname === '/Experience' ? '#88CCCA' : ''}
+                        backgroundColor = {router.pathname === '/Experience' ? 'teal.300' : ''}
                         p = {1}
                         color = {router.pathname === '/Experience' ? 'black' : ''}
+                        textDecoration = {router.pathname === '/Experience' ? 'underline' : ''}
+                        textUnderlineOffset = {4}
                         cursor = "pointer"
                     >
                         {toggleLang ? 'Expériences' : 'Experiences'}
@@ -78,9 +85,11 @@ const Navbar = () => {
                 </Link>
                 <Link href = "/Projets" passHref>
                     <Box
-                        backgroundColor = {router.pathname === '/Projets' ? '#88CCCA' : ''}
+                        backgroundColor = {router.pathname === '/Projets' ? 'teal.300' : ''}
                         p = {1}
                         color = {router.pathname === '/Projets' ? 'black' : ''}
+                        textDecoration = {router.pathname === '/Projets' ? 'underline' : ''}
+                        textUnderlineOffset = {4}
                         cursor = "pointer"
                     >
                         {toggleLang ? 'Projets' : 'Projects'}
@@ -88,9 +97,11 @@ const Navbar = () => {
                 </Link>
                 <Link href = "/Competences" passHref>
                     <Box
-                        backgroundColor = {router.pathname === '/Competences' ? '#88CCCA' : ''}
+                        backgroundColor = {router.pathname === '/Competences' ? 'teal.300' : ''}
                         p = {1}
                         color = {router.pathname === '/Competences' ? 'black' : ''}
+                        textDecoration = {router.pathname === '/Competences' ? 'underline' : ''}
+                        textUnderlineOffset = {4}
                         cursor = "pointer"
                     >
                         {toggleLang ? 'Compétences' : 'Skills'}
@@ -98,9 +109,11 @@ const Navbar = () => {
                 </Link>
                 <Link href = "/News" passHref>
                     <Box
-                        backgroundColor = {router.pathname === '/News' ? '#88CCCA' : ''}
+                        backgroundColor = {router.pathname === '/News' ? 'teal.300' : ''}
                         p = {1}
                         color = {router.pathname === '/News' ? 'black' : ''}
+                        textDecoration = {router.pathname === '/News' ? 'underline' : ''}
+                        textUnderlineOffset = {4}
                         cursor = "pointer"
                     >
                         {toggleLang ? 'Nouveautés' : 'News'}
@@ -124,7 +137,7 @@ const Navbar = () => {
                             </Link>
                         </MenuItem>
                         <MenuItem>
-                            <Link href={'/Projets'}>
+                            <Link href = {'/Projets'}>
                                 {toggleLang ? 'Projets' : 'Projects'}
                             </Link>
                         </MenuItem>

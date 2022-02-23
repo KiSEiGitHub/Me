@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps, router }) {
     return (
         
         <ChakraProvider theme = {theme}>
-            <FunctionCon>
-                <LanguageContext>
+            <LanguageContext>
+                <FunctionCon>
                     <ContextText>
                         <MainContainer>
                             <CustomCursor />
@@ -27,8 +27,8 @@ function MyApp({ Component, pageProps, router }) {
                         
                         </MainContainer>
                     </ContextText>
-                </LanguageContext>
-            </FunctionCon>
+                </FunctionCon>
+            </LanguageContext>
         </ChakraProvider>
     
     );
