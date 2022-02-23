@@ -1,15 +1,9 @@
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons';
+import { EmailIcon } from '@chakra-ui/icons';
 import {
-    Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel,
     Box,
     Button,
     Container, Flex,
-    Icon, Input, InputGroup, InputLeftAddon, InputRightAddon,
-    Popover,
-    PopoverArrow,
-    PopoverBody,
-    PopoverContent,
-    PopoverTrigger,
+    Icon, Input, InputGroup, InputLeftAddon,
     Text,
     useBoolean, useClipboard,
     useColorMode
@@ -34,6 +28,7 @@ import Section from '../Layout/Section';
 import { TextContext } from '../Hook/TextContext';
 import Formation from '../components/Formation';
 import { Functioncontext } from '../Hook/FunctionContext';
+import { ComponentsContext } from '../Hook/ComponentsContext';
 
 const Home = () => {
     
@@ -42,277 +37,216 @@ const Home = () => {
     const { toggleLang } = useContext(LangContext);
     const [flag, setFlag] = useBoolean();
     const { Data } = useContext(TextContext);
-    const { DataLikes } = useContext(TextContext);
     const [value, setValue] = useState('tom.lau.974@gmail.com');
     const { hasCopied, onCopy } = useClipboard(value);
     
-    const {Copie, valuetwo, isCopied} = useContext(Functioncontext)
+    const { Copie, valuetwo, isCopied } = useContext(Functioncontext);
+    const { LikePC, LikeMobile } = useContext(ComponentsContext);
     
-    return ( <>
-        <Container variant = "Main" ref = {imgRef}>
-            <Section delay = {0.1}>
-                <CustomCenter bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}>
-                    <Text variant = "FirstPara">
-                        {toggleLang ? 'Bonjour, je suis un apprenti développeur' : 'Hello, i\'m a apprentice developer'}
-                    </Text>
-                </CustomCenter>
-            </Section>
-            
-            <Box d = {{ sm : 'none', md : 'none', lg : 'block' }}
-                 pos = {{ lg : 'relative' }}
-                 left = {{ lg : '60px' }}
-            >
-                <Section delay = {0.2}>
-                    <Box
-                        onMouseEnter = {setFlag.on}
-                        onMouseOut = {setFlag.off}
-                    >
-                        <CustomImageOne
-                            drag = {imgRef}
-                            src = {flag ? '/Image/hover.jpg' : '/Image/pp.png'}
-                        />
-                    </Box>
+    return (
+        <>
+            <Container variant = "Main" ref = {imgRef}>
+                <Section delay = {0.1}>
+                    <CustomCenter bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}>
+                        <Text variant = "FirstPara">
+                            {toggleLang ? 'Bonjour, je suis un apprenti développeur' : 'Hello, i\'m a apprentice developer'}
+                        </Text>
+                    </CustomCenter>
                 </Section>
-            </Box>
-            
-            {/* Section Intro */}
-            <Section delay = {0.2}>
-                <Text variant = "Me">Tom LAU</Text>
-                <Para
+                
+                <Box d = {{ sm : 'none', md : 'none', lg : 'block' }}
+                     pos = {{ lg : 'relative' }}
+                     left = {{ lg : '60px' }}
                 >
-                    {toggleLang ? 'Recherche contrat d\'alternance' : 'Looking for a work-study contract'}
-                </Para>
-            </Section>
-            {/* Section Intro */}
-            
-            <Box d = {{ sm : 'block', md : 'block', lg : 'none' }}
-                 m = "20px 0px"
-            >
-                <Section delay = {0.2}>
-                    <CustomImageTwo
-                        src = "/Image/pp.png"
-                    />
-                </Section>
-            </Box>
-            
-            {/* Section A propos */}
-            <Section delay = {0.3}>
-                <SectionTitle>
-                    {toggleLang ? 'À propos' : 'About'}
-                </SectionTitle>
-                <ParaIndent>
-                    {toggleLang
-                        ? Data[ 'Other' ][ 'AboutText' ][ 'FR' ]
-                        : Data[ 'Other' ][ 'AboutText' ][ 'EN' ]
-                    }
-                </ParaIndent>
-            </Section>
-            {/* Section A propos */}
-            
-            
-            {/* Section Bio */}
-            <Section delay = {0.4}>
-                <SectionTitle>Bio</SectionTitle>
-                <Box>
-                    <BioSection>
-                        <ParaNoJus>
-                            <BioYear>2000</BioYear>
-                            {toggleLang ? 'Naissance Paris 75' : 'Born in Paris 75'}
-                        </ParaNoJus>
-                    </BioSection>
-                    <BioSection>
-                        <ParaNoJus>
-                            <BioYear>2016</BioYear>
-                            {toggleLang ? 'Lycée professionnel |' : 'Technical College |'} {' '}
-                            <ExtLink href = "https://www.lyceelafayette.fr/">
-                                Fontaineroux
-                            </ExtLink>
-                        </ParaNoJus>
-                    </BioSection>
-                    <BioSection>
-                        <ParaNoJus>
-                            <BioYear>2018</BioYear>
-                            {toggleLang ? 'Obtention BAC PRO SEN (Système Électronique Numérique)' : 'Obtaining the BAC PRO SEN (System Electronic Numeric)'}
-                        </ParaNoJus>
-                    </BioSection>
-                    <BioSection>
-                        <ParaNoJus>
-                            <BioYear>2019</BioYear>
-                            {toggleLang ? 'Formation développeur full-stack ' : 'Full-stack developper training '}
-                            <Box
-                                d = "inline"
-                                pos = "relative"
-                                top = "-2px"
-                            >
-                                <Formation />
-                            </Box>
-                        </ParaNoJus>
-                    </BioSection>
-                    <BioSection>
-                        <ParaNoJus>
-                            <BioYear>
-                                2021 {toggleLang ? 'à aujourd\'hui' : 'to present'}
-                            </BioYear>
-                            {toggleLang ? 'BTS SIO SLAM | Paris |' : 'HND n |'} {' '}
-                            <ExtLink href = "https://cfa-insta.fr/">
-                                CFA-Insta
-                            </ExtLink>
-                        </ParaNoJus>
-                    </BioSection>
-                </Box>
-            </Section>
-            {/* Section Bio */}
-            
-            {/* Like */}
-            <Section delay = {0.5}>
-                <SectionTitle>❤️</SectionTitle>
-                {/* Rendu PC */}
-                <Box d = {{ sm : 'none', md : 'block' }}>
-                    {DataLikes.map((ele) => <>
-                            <Popover>
-                                <PopoverTrigger>
-                                    <Button variant = "ButtonLike">
-                                        {toggleLang
-                                            ? ele[ 'FR' ][ 'Title' ]
-                                            : ele[ 'EN' ][ 'Title' ]
-                                        }
-                                        <Box>
-                                            <ChevronRightIcon />
-                                        </Box>
-                                    </Button>
-                                </PopoverTrigger>
-                                <PopoverContent>
-                                    <PopoverArrow />
-                                    <PopoverBody
-                                        p = "5"
-                                        color = {colorMode === 'light' ? '#56575d' : '#e5e5e5'}
-                                        bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}
-                                    >
-                                        <Para>
-                                            {toggleLang
-                                                ? ele[ 'FR' ][ 'Desc' ]
-                                                : ele[ 'EN' ][ 'Desc' ]
-                                            }
-                                        </Para>
-                                    </PopoverBody>
-                                </PopoverContent>
-                            </Popover>
-                        </>
-                    )}
+                    <Section delay = {0.2}>
+                        <Box
+                            onMouseEnter = {setFlag.on}
+                            onMouseOut = {setFlag.off}
+                        >
+                            <CustomImageOne
+                                drag = {imgRef}
+                                src = {flag ? '/Image/hover.jpg' : '/Image/pp.png'}
+                            />
+                        </Box>
+                    </Section>
                 </Box>
                 
-                {/* Rendu Portable */}
-                <Box d = {{ sm : 'block', md : 'none' }}>
-                    {DataLikes.map((ele) =>
-                        <>
-                            <Accordion allowToggle>
-                                <AccordionItem>
-                                    <h2>
-                                        <AccordionButton>
-                                            <Box
-                                                flex = "1"
-                                                textAlign = "left"
-                                                color = {colorMode === 'light' ? '#626267' : 'teal.200'}
-                                                fontWeight = {700}
-                                            >
-                                                {toggleLang
-                                                    ? ele[ 'FR' ][ 'Title' ]
-                                                    : ele[ 'EN' ][ 'Title' ]
-                                                }
-                                            </Box>
-                                            <AccordionIcon />
-                                        </AccordionButton>
-                                    </h2>
-                                    <AccordionPanel pb = {4} textAlign = "justify">
-                                        {toggleLang
-                                            ? ele[ 'FR' ][ 'Desc' ]
-                                            : ele[ 'EN' ][ 'Desc' ]
-                                        }
-                                    </AccordionPanel>
-                                </AccordionItem>
-                            </Accordion>
-                        </>
-                    )}
-                </Box>
-            </Section>
-            {/* Like */}
-            
-            <Section delay = {0.6}>
-                <SectionTitle>
-                    {toggleLang ? 'Contrat' : 'Contract'}
-                </SectionTitle>
-                <Box>
-                    <Para>
-                        {toggleLang ? '2 jours en formation / 3 jours en entreprise' : '2 days in formation  / 3 days in society'}
+                {/* Section Intro */}
+                <Section delay = {0.2}>
+                    <Text variant = "Me">Tom LAU</Text>
+                    <Para
+                    >
+                        {toggleLang ? 'Recherche contrat d\'alternance' : 'Looking for a work-study contract'}
                     </Para>
+                </Section>
+                {/* Section Intro */}
+                
+                <Box d = {{ sm : 'block', md : 'block', lg : 'none' }}
+                     m = "20px 0px"
+                >
+                    <Section delay = {0.2}>
+                        <CustomImageTwo
+                            src = "/Image/pp.png"
+                        />
+                    </Section>
                 </Box>
-            </Section>
-            
-            <Section delay = {0.7}>
-                <SectionTitle>
-                    {toggleLang ? 'Sur internet' : 'On the web'}
-                </SectionTitle>
-                <Button variant = "ghost" colorScheme = "teal" d = "block"
-                        leftIcon = {<Icon as = {IoLogoGithub} />}>
-                    <ExtLink href = "https://github.com/KiSEiGitHub">
-                        Github
-                    </ExtLink>
-                </Button>
-                <Button variant = "ghost" colorScheme = "teal" leftIcon = {<Icon as = {ImLinkedin} />}>
-                    <ExtLink href = "https://www.linkedin.com/in/tom-lau-7a1732218/">
-                        LinkeDIn
-                    </ExtLink>
-                </Button>
-                <Button variant = "ghost" colorScheme = "teal" d = "block" leftIcon = {<Icon as = {SiIndeed} />}>
-                    <ExtLink href = "https://my.indeed.com/p/toml-gllqqvs">
-                        Indeed
-                    </ExtLink>
-                </Button>
-            </Section>
-            
-            <Section delay = {0.8}>
-                <SectionTitle>
-                    {toggleLang ? 'Sinon' : 'Otherwise'}
-                </SectionTitle>
-                <Flex mb = {2}>
-                    <InputGroup>
-                        {/* eslint-disable-next-line react/no-children-prop */}
-                        <InputLeftAddon children = {<EmailIcon />} />
-                        <Input value = {value} isReadOnly />
-                        {/* eslint-disable-next-line react/no-children-prop */}
-                        {/*<InputRightAddon children = "@gmail.com"/>*/}
-                    </InputGroup>
-                    <Button onClick = {onCopy} ml = {2} colorScheme='teal'>
-                        {hasCopied
-                            ? toggleLang
-                                ? 'Coller'
-                                : 'Copied'
-                            : toggleLang
-                                ? 'Copier'
-                                : 'Copy'
+                
+                {/* Section A propos */}
+                <Section delay = {0.3}>
+                    <SectionTitle>
+                        {toggleLang ? 'À propos' : 'About'}
+                    </SectionTitle>
+                    <ParaIndent>
+                        {toggleLang
+                            ? Data[ 'Other' ][ 'AboutText' ][ 'FR' ]
+                            : Data[ 'Other' ][ 'AboutText' ][ 'EN' ]
                         }
+                    </ParaIndent>
+                </Section>
+                {/* Section A propos */}
+                
+                
+                {/* Section Bio */}
+                <Section delay = {0.4}>
+                    <SectionTitle>Bio</SectionTitle>
+                    <Box>
+                        <BioSection>
+                            <ParaNoJus>
+                                <BioYear>2000</BioYear>
+                                {toggleLang ? 'Naissance Paris 75' : 'Born in Paris 75'}
+                            </ParaNoJus>
+                        </BioSection>
+                        <BioSection>
+                            <ParaNoJus>
+                                <BioYear>2016</BioYear>
+                                {toggleLang ? 'Lycée professionnel |' : 'Technical College |'} {' '}
+                                <ExtLink href = "https://www.lyceelafayette.fr/">
+                                    Fontaineroux
+                                </ExtLink>
+                            </ParaNoJus>
+                        </BioSection>
+                        <BioSection>
+                            <ParaNoJus>
+                                <BioYear>2018</BioYear>
+                                {toggleLang ? 'Obtention BAC PRO SEN (Système Électronique Numérique)' : 'Obtaining the BAC PRO SEN (System Electronic Numeric)'}
+                            </ParaNoJus>
+                        </BioSection>
+                        <BioSection>
+                            <ParaNoJus>
+                                <BioYear>2019</BioYear>
+                                {toggleLang ? 'Formation développeur full-stack ' : 'Full-stack developper training '}
+                                <Box
+                                    d = "inline"
+                                    pos = "relative"
+                                    top = "-2px"
+                                >
+                                    <Formation />
+                                </Box>
+                            </ParaNoJus>
+                        </BioSection>
+                        <BioSection>
+                            <ParaNoJus>
+                                <BioYear>
+                                    2021 {toggleLang ? 'à aujourd\'hui' : 'to present'}
+                                </BioYear>
+                                {toggleLang ? 'BTS SIO SLAM | Paris |' : 'HND n |'} {' '}
+                                <ExtLink href = "https://cfa-insta.fr/">
+                                    CFA-Insta
+                                </ExtLink>
+                            </ParaNoJus>
+                        </BioSection>
+                    </Box>
+                </Section>
+                {/* Section Bio */}
+                {/* Like */}
+                <Section delay = {0.5}>
+                    <SectionTitle>❤️</SectionTitle>
+                    <Box d = {{ sm : 'none', md : 'block' }}>
+                        {LikePC()}
+                    </Box>
+                    <Box d = {{ sm : 'block', md : 'none' }}>
+                        {LikeMobile()}
+                    </Box>
+                </Section>
+                {/* Like */}
+                
+                <Section delay = {0.6}>
+                    <SectionTitle>
+                        {toggleLang ? 'Contrat' : 'Contract'}
+                    </SectionTitle>
+                    <Box>
+                        <Para>
+                            {toggleLang ? '2 jours en formation / 3 jours en entreprise' : '2 days in formation  / 3 days in society'}
+                        </Para>
+                    </Box>
+                </Section>
+                
+                <Section delay = {0.7}>
+                    <SectionTitle>
+                        {toggleLang ? 'Sur internet' : 'On the web'}
+                    </SectionTitle>
+                    <Button variant = "ghost" colorScheme = "teal" d = "block"
+                            leftIcon = {<Icon as = {IoLogoGithub} />}>
+                        <ExtLink href = "https://github.com/KiSEiGitHub">
+                            Github
+                        </ExtLink>
                     </Button>
-                </Flex>
-                <Flex mb = {2}>
-                    <InputGroup>
-                        {/* eslint-disable-next-line react/no-children-prop */}
-                        <InputLeftAddon children = {<BsFillPhoneFill />} />
-                        <Input value = {valuetwo} isReadOnly />
-                    </InputGroup>
-                    <Button onClick = {() => Copie(valuetwo)} ml = {2} colorScheme='teal'>
-                        {isCopied
-                            ? toggleLang
-                                ? 'Coller'
-                                : 'Copied'
-                            : toggleLang
-                                ? 'Copier'
-                                : 'Copy'
-                        }
+                    <Button variant = "ghost" colorScheme = "teal" leftIcon = {<Icon as = {ImLinkedin} />}>
+                        <ExtLink href = "https://www.linkedin.com/in/tom-lau-7a1732218/">
+                            LinkeDIn
+                        </ExtLink>
                     </Button>
-                </Flex>
-            </Section>
-        </Container>
-    </> );
+                    <Button variant = "ghost" colorScheme = "teal" d = "block" leftIcon = {<Icon as = {SiIndeed} />}>
+                        <ExtLink href = "https://my.indeed.com/p/toml-gllqqvs">
+                            Indeed
+                        </ExtLink>
+                    </Button>
+                </Section>
+                
+                <Section delay = {0.8}>
+                    <SectionTitle>
+                        {toggleLang ? 'Sinon' : 'Otherwise'}
+                    </SectionTitle>
+                    <Flex mb = {2}>
+                        <InputGroup>
+                            {/* eslint-disable-next-line react/no-children-prop */}
+                            <InputLeftAddon children = {<EmailIcon />} />
+                            <Input value = {value} isReadOnly />
+                            {/* eslint-disable-next-line react/no-children-prop */}
+                            {/*<InputRightAddon children = "@gmail.com"/>*/}
+                        </InputGroup>
+                        <Button onClick = {onCopy} ml = {2} colorScheme = "teal">
+                            {hasCopied
+                                ? toggleLang
+                                    ? 'Coller'
+                                    : 'Copied'
+                                : toggleLang
+                                    ? 'Copier'
+                                    : 'Copy'
+                            }
+                        </Button>
+                    </Flex>
+                    <Flex mb = {2}>
+                        <InputGroup>
+                            {/* eslint-disable-next-line react/no-children-prop */}
+                            <InputLeftAddon children = {<BsFillPhoneFill />} />
+                            <Input value = {valuetwo} isReadOnly />
+                        </InputGroup>
+                        <Button onClick = {() => Copie(valuetwo)} ml = {2} colorScheme = "teal">
+                            {isCopied
+                                ? toggleLang
+                                    ? 'Coller'
+                                    : 'Copied'
+                                : toggleLang
+                                    ? 'Copier'
+                                    : 'Copy'
+                            }
+                        </Button>
+                    </Flex>
+                </Section>
+            </Container>
+        </>
+    );
 };
 
 export default Home;
