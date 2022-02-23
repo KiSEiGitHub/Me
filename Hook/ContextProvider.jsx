@@ -2,6 +2,7 @@ import { createContext } from 'react';
 import FunctionCon from './FunctionContext';
 import ContextText from './TextContext';
 import LanguageContext from './LangContext';
+import CompContext from './ComponentsContext';
 
 export const ContextProvider = createContext(undefined);
 
@@ -11,7 +12,9 @@ const ContexteProvider = (props) => {
             <FunctionCon>
                 <ContextText>
                     <LanguageContext>
-                        {props.children}
+                        <CompContext>
+                            {props.children}
+                        </CompContext>
                     </LanguageContext>
                 </ContextText>
             </FunctionCon>
@@ -19,4 +22,4 @@ const ContexteProvider = (props) => {
     );
 };
 
-export default ContexteProvider
+export default ContexteProvider;
