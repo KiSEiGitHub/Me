@@ -28,13 +28,11 @@ import Section from '../Layout/Section';
 import { TextContext } from '../Hook/TextContext';
 import Formation from '../components/Formation';
 import { Functioncontext } from '../Hook/FunctionContext';
-import { ComponentsContext } from '../Hook/ComponentsContext';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
-import 'swiper/css/effect-fade';
 
 const Home = () => {
     
@@ -170,11 +168,11 @@ const Home = () => {
                     <Swiper
                         pagination = {{
                             dynamicBullets : true,
+                            clickable: true
                         }}
                         grabCursor={true}
                         loop = {true}
-                        effect='Fade'
-                        modules = {[Pagination, EffectFade]}
+                        modules = {[Pagination]}
                         style = {{
                             width  : '100%',
                             height : 'auto',
