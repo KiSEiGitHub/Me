@@ -18,7 +18,6 @@ const styles = {
         body : {
             bg                           : mode('#f0e7db', '#202023')(props),
             fontFamily                   : '@import url(\'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap\');',
-            cursor                       : { sm : 'block', md : 'block', lg : 'none' },
             '&::-webkit-scrollbar'       : {
                 width        : 2,
                 borderRadius : '20px'
