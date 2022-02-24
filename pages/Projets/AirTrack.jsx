@@ -14,12 +14,16 @@ import PiloteForm from '../../public/Image/Project/AirTrack/PiloteForm.png';
 import PiloteTab from '../../public/Image/Project/AirTrack/PiloteTab.png';
 import VolForm from '../../public/Image/Project/AirTrack/VolForm.png';
 import VolTab from '../../public/Image/Project/AirTrack/VolTab.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCards, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/pagination';
 
 const AirTrack = () => {
     
     const { toggleLang } = useContext(LangContext);
     const { DataProject } = useContext(TextContext);
-    
     
     return (
         <>
@@ -124,64 +128,29 @@ const AirTrack = () => {
                 
                 <Section delay = {0.5}>
                     <SectionTitle>{toggleLang ? 'Maquette' : 'Model'}</SectionTitle>
-                    <SimpleGrid minChildWidth = "220px" spacing = "20px">
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '3px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                    <Swiper
+                        grabCursor = {true}
+                        modules = {[Pagination, EffectCards]}
+                        effect = {'cards'}
+                        pagination = {{
+                            dynamicBullets : true
+                        }}
+                    >
+                        <SwiperSlide>
                             <Image
                                 src = {AeroForm}
+                                alt = {'Formulaire aéroport'}
                             />
-                            <Text textAlign = "center">Formulaire Aéroport</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '30px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                        </SwiperSlide>
+                        <SwiperSlide>
                             <Image
                                 src = {AeroTab}
+                                alt = {'Formulaire aéroport'}
                             />
-                            <Text textAlign = "center">Tableau Aéroport</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '30px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {AvionForm}
-                            />
-                            <Text textAlign = "center">Formulaire Avions</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '30px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {AvionTab}
-                            />
-                            <Text textAlign = "center">Tableau Aéroport</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '30px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {PiloteForm}
-                            />
-                            <Text textAlign = "center">Formulaire Pilote</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '20px', lg : '30px', xl : '90px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {PiloteTab}
-                            />
-                            <Text textAlign = "center">Tableau Pilote</Text>
-                        </Box>
-                        <Box height = "200px" mb = {{ sm : '120px', md : '250px', lg : '30px', xl : '30px' }}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {VolForm}
-                            />
-                            <Text textAlign = "center">Formulaire Vol</Text>
-                        </Box>
-                        <Box height = "200px" mb = {20}>
-                            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-                            <Image
-                                src = {VolTab}
-                            />
-                            <Text textAlign = "center">Tableau Vol</Text>
-                        </Box>
-                    </SimpleGrid>
+                        </SwiperSlide>
+                        <SwiperSlide>3</SwiperSlide>
+                        <SwiperSlide>4</SwiperSlide>
+                    </Swiper>
                 </Section>
             </Container>
         </>
