@@ -107,18 +107,6 @@ const Navbar = () => {
                         {toggleLang ? 'Compétences' : 'Skills'}
                     </Box>
                 </Link>
-                <Link href = "/News" passHref>
-                    <Box
-                        backgroundColor = {router.pathname === '/News' ? 'teal.300' : ''}
-                        p = {1}
-                        color = {router.pathname === '/News' ? 'black' : ''}
-                        textDecoration = {router.pathname === '/News' ? 'underline' : ''}
-                        textUnderlineOffset = {4}
-                        cursor = "pointer"
-                    >
-                        {toggleLang ? 'Nouveautés' : 'News'}
-                    </Box>
-                </Link>
             </HStack>
             <Box d = {{ sm : 'block', md : 'none' }} mr = {2}>
                 <Menu>
@@ -145,13 +133,6 @@ const Navbar = () => {
                             <Link href = {'/Experience'}>
                                 <a>
                                     {toggleLang ? 'Expériences' : 'Experiences'}
-                                </a>
-                            </Link>
-                        </MenuItem>
-                        <MenuItem>
-                            <Link href = {'/News'}>
-                                <a>
-                                    {toggleLang ? 'Nouveautés' : 'News'}
                                 </a>
                             </Link>
                         </MenuItem>

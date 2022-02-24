@@ -29,6 +29,12 @@ import { TextContext } from '../Hook/TextContext';
 import Formation from '../components/Formation';
 import { Functioncontext } from '../Hook/FunctionContext';
 import { ComponentsContext } from '../Hook/ComponentsContext';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+import 'swiper/css/effect-fade';
 
 const Home = () => {
     
@@ -39,9 +45,9 @@ const Home = () => {
     const { Data } = useContext(TextContext);
     const [value, setValue] = useState('tom.lau.974@gmail.com');
     const { hasCopied, onCopy } = useClipboard(value);
+    const { DataLikes } = useContext(TextContext);
     
     const { Copie, valuetwo, isCopied } = useContext(Functioncontext);
-    const { LikePC, LikeMobile } = useContext(ComponentsContext);
     
     return (
         <>
@@ -161,12 +167,52 @@ const Home = () => {
                 {/* Like */}
                 <Section delay = {0.5}>
                     <SectionTitle>❤️</SectionTitle>
-                    <Box d = {{ sm : 'none', md : 'block' }}>
-                        {LikePC()}
-                    </Box>
-                    <Box d = {{ sm : 'block', md : 'none' }}>
-                        {LikeMobile()}
-                    </Box>
+                    <Swiper
+                        pagination = {{
+                            dynamicBullets : true,
+                        }}
+                        grabCursor={true}
+                        loop = {true}
+                        effect='Fade'
+                        modules = {[Pagination, EffectFade]}
+                        style = {{
+                            width  : '100%',
+                            height : 'auto',
+                        }}
+                    >
+                        {DataLikes.map((item) =>
+                            <>
+                                <SwiperSlide
+                                    style={{
+                                        padding: '10px'
+                                    }}
+                                >
+                                    <Text
+                                        textAlign='center'
+                                        fontWeight={600}
+                                        textDecoration='underline'
+                                        fontSize='1.3em'
+                                        textUnderlineOffset={6}
+                                    >
+                                        {toggleLang
+                                            ? item['FR']['Title']
+                                            : item['EN']['Title']
+                                        }
+                                    </Text>
+                                    <Text
+                                        mt={10}
+                                        mb={5}
+                                        textAlign='justify'
+                                    >
+                                        {toggleLang
+                                            ? item['FR']['Desc']
+                                            : item['EN']['Desc']
+                                        }
+                                    </Text>
+                                </SwiperSlide>
+                            </>
+                        )}
+                    </Swiper>
                 </Section>
                 {/* Like */}
                 

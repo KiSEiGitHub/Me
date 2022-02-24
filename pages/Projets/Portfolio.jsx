@@ -77,21 +77,6 @@ const Portfolio = () => {
                         }
                     </Text>
                 </Section>
-                
-                <Section delay={0.5}>
-                    <SectionTitle>{toggleLang ? 'Furtur mise à jour' : 'Future update'}</SectionTitle>
-                    <ParaIndent>
-                        {toggleLang
-                            ? DataProject[ 'Portfolio' ][ 'Update' ][ 'FR' ]
-                            : DataProject[ 'Portfolio' ][ 'Update' ][ 'EN' ]
-                        }
-                    </ParaIndent>
-                    <Link href = {'../News'} passHref>
-                        <Text variant = "ProjetLink" cursor = "pointer">
-                            {toggleLang ? 'Nouveautés' : 'News'}
-                        </Text>
-                    </Link>
-                </Section>
             </Container>
         </>
     );
