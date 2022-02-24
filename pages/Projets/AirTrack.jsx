@@ -132,24 +132,16 @@ const AirTrack = () => {
                         grabCursor = {true}
                         modules = {[Pagination, EffectCards]}
                         effect = {'cards'}
-                        pagination = {{
-                            dynamicBullets : true
-                        }}
                     >
                         <SwiperSlide>
-                            <Image
-                                src = {AeroForm}
-                                alt = {'Formulaire aéroport'}
-                            />
+                            <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image
-                                src = {AeroTab}
-                                alt = {'Formulaire aéroport'}
-                            />
+                            <Image src = {AeroTab} alt = {'Formulaire aéroport'} />
                         </SwiperSlide>
-                        <SwiperSlide>3</SwiperSlide>
-                        <SwiperSlide>4</SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {VolForm} alt = {'Formulaire aéroport'} />
+                        </SwiperSlide>
                     </Swiper>
                 </Section>
             </Container>
