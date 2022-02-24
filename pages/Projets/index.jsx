@@ -7,6 +7,14 @@ import Section from '../../Layout/Section';
 import { LangContext } from '../../Hook/LangContext';
 import { SectionTitle } from '../../Layout/CustomText';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import ProjetPerso from '../../Json/ProjetPerso.json';
+import ProjetCons from '../../Json/ProjetCons.json';
+
 const Projet = () => {
     
     const { toggleLang } = useContext(LangContext);
@@ -26,7 +34,7 @@ const Projet = () => {
                 >
                     <Text
                         variant = "section-title"
-                        textAlign = {BreakPoint ? '' : 'center'}
+                        textAlign = {BreakPoint ? 'center' : 'center'}
                     >
                         {toggleLang ? 'Projets d\'école' : 'School projects'}
                     </Text>
@@ -35,44 +43,55 @@ const Projet = () => {
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
                         flexWrap = "wrap"
                     >
-                        {Projet.Projet.map((item) =>
-                            <>
-                                <Box w = "410px" borderWidth = "1px" borderRadius = "lg" overflow = "hidden"
-                                     pos = "relative" p = {5} d = "block"
-                                >
-                                    <Image
-                                        src = {item[ 'Photo' ]}
-                                        alt = "Logo"
-                                    />
-                                    <Box p = {1}>
-                                        <Box
-                                            fontWeight = "semibold"
-                                            as = "h4"
-                                            lineHeight = "tight"
-                                            isTruncated
-                                        >
-                                            <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                        <Swiper
+                            pagination = {{
+                                dynamicBullets : true,
+                            }}
+                            grabCursor = {true}
+                            modules = {[Pagination]}
+                            style = {{
+                                maxWidth : '420px'
+                            }}
+                        >
+                            {Projet.Projet.map((item) =>
+                                <>
+                                    <SwiperSlide>
+                                        <Box mb = {10} maxW = "420px">
+                                            <Image
+                                                src = {item[ 'Photo' ]}
+                                                alt = "Logo"
+                                            />
+                                            <Box p = {1}>
+                                                <Box
+                                                    fontWeight = "semibold"
+                                                    as = "h4"
+                                                    lineHeight = "tight"
+                                                    isTruncated
+                                                >
+                                                    <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                                                </Box>
+                                                <Box as = "h4" mb = {10}>
+                                                    {toggleLang
+                                                        ? item[ 'Description' ][ 'fr' ]
+                                                        : item[ 'Description' ][ 'en' ]
+                                                    }
+                                                </Box>
+                                                <Button
+                                                    pos = "absolute"
+                                                    right = {2}
+                                                    bottom = {2}
+                                                    colorScheme = "teal"
+                                                >
+                                                    <Link href = {`${item.Link}`} passHref>
+                                                        En savoir plus
+                                                    </Link>
+                                                </Button>
+                                            </Box>
                                         </Box>
-                                        <Box as = "h4" mb = {10}>
-                                            {toggleLang
-                                                ? item[ 'Description' ][ 'fr' ]
-                                                : item[ 'Description' ][ 'en' ]
-                                            }
-                                        </Box>
-                                        <Button
-                                            pos = "absolute"
-                                            right = {2}
-                                            bottom = {2}
-                                            colorScheme = "teal"
-                                        >
-                                            <Link href = {`${item.Link}`} passHref>
-                                                En savoir plus
-                                            </Link>
-                                        </Button>
-                                    </Box>
-                                </Box>
-                            </>
-                        )}
+                                    </SwiperSlide>
+                                </>
+                            )}
+                        </Swiper>
                     </Box>
                 </Box>
             </Section>
@@ -88,7 +107,7 @@ const Projet = () => {
                 >
                     <Text
                         variant = "section-title"
-                        textAlign = {BreakPoint ? '' : 'center'}
+                        textAlign = {BreakPoint ? 'center' : 'center'}
                     >
                         {toggleLang ? 'Projets personnel' : 'Personnal projects'}
                     </Text>
@@ -97,43 +116,56 @@ const Projet = () => {
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
                         flexWrap = "wrap"
                     >
-                        {ProjetPerso.ProjetPerso.map((item) =>
-                            <>
-                                <Box w = "410px" borderWidth = "1px" borderRadius = "lg" overflow = "hidden"
-                                     pos = "relative" p = {5} d = "block">
-                                    <Image
-                                        src = {item[ 'Photo' ]}
-                                        alt = "o" />
-                                    
-                                    <Box p = {1}>
-                                        <Box
-                                            fontWeight = "semibold"
-                                            as = "h4"
-                                            lineHeight = "tight"
-                                            isTruncated
-                                        >
-                                            <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                        <Swiper
+                            pagination = {{
+                                dynamicBullets : true,
+                            }}
+                            grabCursor = {true}
+                            modules = {[Pagination]}
+                            style = {{
+                                maxWidth : '420px'
+                            }}
+                        >
+                            
+                            {ProjetPerso.ProjetPerso.map((item) =>
+                                <>
+                                    <SwiperSlide>
+                                        <Box mb = {10} maxW = "420px">
+                                            <Image
+                                                src = {item[ 'Photo' ]}
+                                                alt = "o" />
+                                            
+                                            <Box p = {1}>
+                                                <Box
+                                                    fontWeight = "semibold"
+                                                    as = "h4"
+                                                    lineHeight = "tight"
+                                                    isTruncated
+                                                >
+                                                    <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                                                </Box>
+                                                <Box as = "h4" mb = {10}>
+                                                    {toggleLang
+                                                        ? item[ 'Description' ][ 'fr' ]
+                                                        : item[ 'Description' ][ 'en' ]
+                                                    }
+                                                </Box>
+                                                <Button
+                                                    pos = "absolute"
+                                                    right = {2}
+                                                    bottom = {2}
+                                                    colorScheme = "teal"
+                                                >
+                                                    <Link href = {`${item.Link}`} passHref>
+                                                        En savoir plus
+                                                    </Link>
+                                                </Button>
+                                            </Box>
                                         </Box>
-                                        <Box as = "h4" mb = {10}>
-                                            {toggleLang
-                                                ? item[ 'Description' ][ 'fr' ]
-                                                : item[ 'Description' ][ 'en' ]
-                                            }
-                                        </Box>
-                                        <Button
-                                            pos = "absolute"
-                                            right = {2}
-                                            bottom = {2}
-                                            colorScheme = "teal"
-                                        >
-                                            <Link href = {`${item.Link}`} passHref>
-                                                En savoir plus
-                                            </Link>
-                                        </Button>
-                                    </Box>
-                                </Box>
-                            </>
-                        )}
+                                    </SwiperSlide>
+                                </>
+                            )}
+                        </Swiper>
                     </Box>
                 </Box>
             </Section>
@@ -147,12 +179,12 @@ const Projet = () => {
                     p = {5}
                 >
                     <Text
-                        variant="section-title"
-                        textAlign={BreakPoint ? '' : 'center'}
+                        variant = "section-title"
+                        textAlign = {BreakPoint ? 'center' : 'center'}
                     >
                         {toggleLang
-                            ? "Projets console"
-                            : "Console projects"
+                            ? 'Projets console'
+                            : 'Console projects'
                         }
                     </Text>
                     <Box
@@ -160,43 +192,56 @@ const Projet = () => {
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
                         flexWrap = "wrap"
                     >
-                        {ProjetCons.ProjetCons.map((item) =>
-                            <>
-                                <Box w = "410px" borderWidth = "1px" borderRadius = "lg" overflow = "hidden"
-                                     pos = "relative" p = {5} d = "block">
-                                    <Image
-                                        src = {item[ 'Photo' ]}
-                                        alt = "o" />
-                                    
-                                    <Box p = {1}>
-                                        <Box
-                                            fontWeight = "semibold"
-                                            as = "h4"
-                                            lineHeight = "tight"
-                                            isTruncated
-                                        >
-                                            <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                        <Swiper
+                            pagination = {{
+                                dynamicBullets : true,
+                            }}
+                            grabCursor = {true}
+                            modules = {[Pagination]}
+                            style = {{
+                                maxWidth : '420px'
+                            }}
+                        >
+                            {ProjetCons.ProjetCons.map((item) =>
+                                <>
+                                    <SwiperSlide>
+                                        <Box  mb = {10} maxW = "420px">
+                                            <Image
+                                                src = {item[ 'Photo' ]}
+                                                alt = "o" />
+                                            
+                                            <Box p = {1}>
+                                                <Box
+                                                    fontWeight = "semibold"
+                                                    as = "h4"
+                                                    lineHeight = "tight"
+                                                    isTruncated
+                                                >
+                                                    <SectionTitle>{item[ 'Title' ]}</SectionTitle>
+                                                </Box>
+                                                <Box as = "h4" mb = {10}>
+                                                    {toggleLang
+                                                        ? item[ 'Description' ][ 'fr' ]
+                                                        : item[ 'Description' ][ 'en' ]
+                                                    }
+                                                </Box>
+                                                <Button
+                                                    pos = "absolute"
+                                                    right = {2}
+                                                    bottom = {2}
+                                                    colorScheme = "teal"
+                                                >
+                                                    <Link href = {`${item.Link}`} passHref>
+                                                        En savoir plus
+                                                    </Link>
+                                                </Button>
+                                            </Box>
                                         </Box>
-                                        <Box as = "h4" mb = {10}>
-                                            {toggleLang
-                                                ? item[ 'Description' ][ 'fr' ]
-                                                : item[ 'Description' ][ 'en' ]
-                                            }
-                                        </Box>
-                                        <Button
-                                            pos = "absolute"
-                                            right = {2}
-                                            bottom = {2}
-                                            colorScheme = "teal"
-                                        >
-                                            <Link href = {`${item.Link}`} passHref>
-                                                En savoir plus
-                                            </Link>
-                                        </Button>
-                                    </Box>
-                                </Box>
-                            </>
-                        )}
+                                    </SwiperSlide>
+                                </>
+                            )}
+                        
+                        </Swiper>
                     </Box>
                 </Box>
             </Section>

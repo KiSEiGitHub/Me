@@ -4,10 +4,10 @@
       "Photo": "https://images.unsplash.com/photo-1529074963764-98f45c47344b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1486&q=80",
       "Title": "AirTrack",
       "Description": {
-        "fr" : "Un projet de groupe sur le theme des pilotes d'air France",
-        "en" : "A groupe project based on the air France's pilots theme"
+        "fr": "Un projet de groupe sur le theme des pilotes d'air France",
+        "en": "A groupe project based on the air France's pilots theme"
       },
-      "Link" : "/Projets/AirTrack"
+      "Link": "/Projets/AirTrack"
     }
   ]
 }
