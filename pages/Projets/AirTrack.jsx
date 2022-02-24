@@ -137,10 +137,25 @@ const AirTrack = () => {
                             <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src = {AeroTab} alt = {'Formulaire aéroport'} />
+                            <Image src = {AeroTab} alt = {'Tableau aéroport'} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image src = {VolForm} alt = {'Formulaire aéroport'} />
+                            <Image src = {VolForm} alt = {'Formulaire Vol'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {VolTab} alt = {'Tableau Vol'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {AvionForm} alt = {'Formulaire avion'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {AvionTab} alt = {'Formulaire Tableau'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {PiloteForm} alt = {'Formulaire Pilotes'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {PiloteTab} alt = {'Pilotes tableau'} />
                         </SwiperSlide>
                     </Swiper>
                 </Section>
