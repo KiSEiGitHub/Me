@@ -30,7 +30,7 @@ const AirTrack = () => {
     
     return (
         <>
-            <Container variant = "Main">
+            <Container variant = "Main" bg={'teal'}>
                 
                 <Section delay = {0.2}>
                     <SectionTitle>AirTrack</SectionTitle>
@@ -135,8 +135,15 @@ const AirTrack = () => {
                         grabCursor = {true}
                         modules = {[Pagination, EffectCards]}
                         effect = {'cards'}
+                        style={{
+                            backgroundColor: 'red',
+                        }}
                     >
-                        <SwiperSlide>
+                        <SwiperSlide
+                            style={{
+                                backgroundColor: 'teal'
+                            }}
+                        >
                             <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
                         </SwiperSlide>
                         <SwiperSlide>
@@ -163,7 +170,7 @@ const AirTrack = () => {
                     </Swiper>
                 </Section>
                 
-                <Section delay = {0.4}>
+                <Section delay={0.4}>
                     <BtnReturnPro />
                 </Section>
             </Container>
