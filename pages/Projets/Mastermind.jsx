@@ -3,6 +3,7 @@ import { Box, Container, ListItem, Tag, Text, UnorderedList } from '@chakra-ui/r
 import Section from '../../Layout/Section';
 import { ExtLink, Para, ParaIndent, SectionTitle } from '../../Layout/CustomText';
 import { LangContext } from '../../Hook/LangContext';
+import BtnReturnPro from '../../components/BtnReturnPro';
 
 const Mastermind = () => {
     
@@ -57,6 +58,10 @@ const Mastermind = () => {
                     <Text mt = {5}>
                         La partie s’arrête quand le joueur a retrouvé le bon code ou quand il a épuisé ses 12 tentatives
                     </Text>
+                </Section>
+                
+                <Section delay={0.4}>
+                    <BtnReturnPro />
                 </Section>
             </Container>
         </>

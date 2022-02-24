@@ -5,6 +5,7 @@ import Section from '../../Layout/Section';
 import { ExtLink, ParaIndent, SectionTitle } from '../../Layout/CustomText';
 import { LangContext } from '../../Hook/LangContext';
 import { TextContext } from '../../Hook/TextContext';
+import BtnReturnPro from '../../components/BtnReturnPro';
 
 const Portfolio = () => {
     
@@ -76,6 +77,10 @@ const Portfolio = () => {
                             : DataProject[ 'Portfolio' ][ 'Librairies' ][ 'EN2' ]
                         }
                     </Text>
+                </Section>
+                
+                <Section delay={0.4}>
+                    <BtnReturnPro />
                 </Section>
             </Container>
         </>

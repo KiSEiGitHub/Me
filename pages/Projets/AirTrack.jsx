@@ -1,6 +1,7 @@
-import { Box, Container, ListItem, SimpleGrid, Tag, Text, UnorderedList } from '@chakra-ui/react';
+import { Box, Container, Divider, ListItem, SimpleGrid, Tag, Text, UnorderedList, Button } from '@chakra-ui/react';
 import { ExtLink, ParaIndent, SectionTitle } from '../../Layout/CustomText';
 import React, { useContext } from 'react';
+import Link from 'next/link';
 import { TextContext } from '../../Hook/TextContext';
 import Section from '../../Layout/Section';
 import { LangContext } from '../../Hook/LangContext';
@@ -19,6 +20,8 @@ import { EffectCards, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/pagination';
+import { ArrowBackIcon } from '@chakra-ui/icons';
+import BtnReturnPro from '../../components/BtnReturnPro';
 
 const AirTrack = () => {
     
@@ -158,6 +161,10 @@ const AirTrack = () => {
                             <Image src = {PiloteTab} alt = {'Pilotes tableau'} />
                         </SwiperSlide>
                     </Swiper>
+                </Section>
+                
+                <Section delay = {0.4}>
+                    <BtnReturnPro />
                 </Section>
             </Container>
         </>
