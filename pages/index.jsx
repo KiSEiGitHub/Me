@@ -170,8 +170,8 @@ const Home = () => {
                             dynamicBullets : true,
                             clickable: true
                         }}
+                        rewind={true}
                         grabCursor={true}
-                        loop = {true}
                         modules = {[Pagination]}
                         style = {{
                             width  : '100%',
