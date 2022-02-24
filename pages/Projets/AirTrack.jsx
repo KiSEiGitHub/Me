@@ -139,11 +139,7 @@ const AirTrack = () => {
                             backgroundColor: 'red',
                         }}
                     >
-                        <SwiperSlide
-                            style={{
-                                backgroundColor: 'teal'
-                            }}
-                        >
+                        <SwiperSlide>
                             <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
                         </SwiperSlide>
                         <SwiperSlide>
