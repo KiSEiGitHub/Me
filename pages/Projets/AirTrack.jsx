@@ -131,42 +131,42 @@ const AirTrack = () => {
                 
                 <Section delay = {0.5}>
                     <SectionTitle>{toggleLang ? 'Maquette' : 'Model'}</SectionTitle>
-                    <Box
-                        w = "480px"
-                        m = '0 auto'
+                    <Swiper
+                        pagination = {{
+                            dynamicBullets : true,
+                        }}
+                        grabCursor = {true}
+                        modules = {[Pagination]}
+                        style = {{
+                            margin  : '0 auto',
+                            display : 'block'
+                        }}
                     >
-                        
-                        <Swiper
-                            grabCursor = {true}
-                            modules = {[Pagination, EffectCards]}
-                            effect = {'cards'}
-                        >
-                            <SwiperSlide>
-                                <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {AeroTab} alt = {'Tableau aéroport'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {VolForm} alt = {'Formulaire Vol'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {VolTab} alt = {'Tableau Vol'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {AvionForm} alt = {'Formulaire avion'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {AvionTab} alt = {'Formulaire Tableau'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {PiloteForm} alt = {'Formulaire Pilotes'} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Image src = {PiloteTab} alt = {'Pilotes tableau'} />
-                            </SwiperSlide>
-                        </Swiper>
-                    </Box>
+                        <SwiperSlide>
+                            <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {AeroTab} alt = {'Tableau aéroport'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {VolForm} alt = {'Formulaire Vol'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {VolTab} alt = {'Tableau Vol'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {AvionForm} alt = {'Formulaire avion'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {AvionTab} alt = {'Formulaire Tableau'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {PiloteForm} alt = {'Formulaire Pilotes'} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image src = {PiloteTab} alt = {'Pilotes tableau'} />
+                        </SwiperSlide>
+                    </Swiper>
                 </Section>
                 
                 <Section delay = {0.4}>
