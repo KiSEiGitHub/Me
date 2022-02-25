@@ -6,7 +6,7 @@ import { ArrowBackIcon } from '@chakra-ui/icons';
 const BtnReturnPro = () => {
     return (
         <>
-            <Box bg={"teal"}>
+            <Box>
                 <Divider />
                 <Link href = {'/Projets'} passHref>
                     <Button colorScheme = {'teal'} d = "block" m = "30px auto 0">
