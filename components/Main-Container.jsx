@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import NewNav from './New_Nav';
 
 const MainContainer = (props) => {
     
@@ -14,7 +15,8 @@ const MainContainer = (props) => {
                 <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
                 <link rel = "icon" href = "/Image/Fav.png" />
             </Head>
-            <Navbar />
+            {/*<Navbar />*/}
+            <NewNav />
             {props.children}
         </>
     );
