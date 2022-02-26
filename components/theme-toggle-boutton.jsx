@@ -7,7 +7,7 @@ const ThemeToggleButton = () => {
 
     return (
         <AnimatePresence exitBeforeEnter initial={false}>
-            <Box ml={{ md: '150px' }} mr={{ sm: '6px', md: '1px' }}>
+            <Box mr={2}>
                 <motion.div
                     style={{ display: 'inline-block' }}
                     initial={{ y: - 20, opacity: 0 }}
