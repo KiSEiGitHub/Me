@@ -33,6 +33,7 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
+import Typical from 'react-typical';
 
 const Home = () => {
     
@@ -53,7 +54,10 @@ const Home = () => {
                 <Section delay = {0.1}>
                     <CustomCenter bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}>
                         <Text variant = "FirstPara">
-                            {toggleLang ? 'Bonjour, je suis un apprenti développeur' : 'Hello, i\'m a apprentice developer'}
+                            <Typical
+                                steps = {['Bonjour !', 500, 'Je suis un apprenti développeur']}
+                                loop = '1'
+                            />
                         </Text>
                     </CustomCenter>
                 </Section>
@@ -168,10 +172,10 @@ const Home = () => {
                     <Swiper
                         pagination = {{
                             dynamicBullets : true,
-                            clickable: true
+                            clickable      : true
                         }}
-                        rewind={true}
-                        grabCursor={true}
+                        rewind = {true}
+                        grabCursor = {true}
                         modules = {[Pagination]}
                         style = {{
                             width  : '100%',
@@ -181,30 +185,30 @@ const Home = () => {
                         {DataLikes.map((item) =>
                             <>
                                 <SwiperSlide
-                                    style={{
-                                        padding: '10px'
+                                    style = {{
+                                        padding : '10px'
                                     }}
                                 >
                                     <Text
-                                        textAlign='center'
-                                        fontWeight={600}
-                                        textDecoration='underline'
-                                        fontSize='1.3em'
-                                        textUnderlineOffset={6}
+                                        textAlign = "center"
+                                        fontWeight = {600}
+                                        textDecoration = "underline"
+                                        fontSize = "1.3em"
+                                        textUnderlineOffset = {6}
                                     >
                                         {toggleLang
-                                            ? item['FR']['Title']
-                                            : item['EN']['Title']
+                                            ? item[ 'FR' ][ 'Title' ]
+                                            : item[ 'EN' ][ 'Title' ]
                                         }
                                     </Text>
                                     <Text
-                                        mt={10}
-                                        mb={5}
-                                        textAlign='justify'
+                                        mt = {10}
+                                        mb = {5}
+                                        textAlign = "justify"
                                     >
                                         {toggleLang
-                                            ? item['FR']['Desc']
-                                            : item['EN']['Desc']
+                                            ? item[ 'FR' ][ 'Desc' ]
+                                            : item[ 'EN' ][ 'Desc' ]
                                         }
                                     </Text>
                                 </SwiperSlide>
