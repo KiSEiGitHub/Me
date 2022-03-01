@@ -75,7 +75,7 @@ const Competences = () => {
                     </Fade>
                     <Fade bottom>
                         <Box
-                            w="80%"
+                            w={{sm: '80%', md: '80%', lg : '800px'}}
                             h="auto"
                             p="0 20px"
                             m="0 auto"
@@ -93,13 +93,8 @@ const Competences = () => {
                             </Heading>
                             <Box
                                 m="0 auto"
-
                             >
-                                <Text
-                                    variant="ParaIndent"
-                                    w={{sm: '240px', md: '350px', lg: '650px'}}
-                                    m="0 auto"
-                                >
+                                <Text variant="ParaIndent">
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     {toggleLang
                                         ? Data['Other']['QuickView']['FR']
