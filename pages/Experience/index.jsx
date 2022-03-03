@@ -1,55 +1,84 @@
-import { Container } from '@chakra-ui/react'
-import React, { useContext } from 'react'
-import { SectionTitle } from '../../Layout/CustomText'
-import Section from '../../Layout/Section'
-import { LangContext } from '../../Hook/LangContext'
-import { SimpleGrid } from "@chakra-ui/react";
-import { Box } from "@chakra-ui/react";
-import { LinkBox } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
-import Link from 'next/link'
+import { Button, Container, Flex, useColorMode } from '@chakra-ui/react';
+import React, { useContext } from 'react';
+import { SectionTitle } from '../../Layout/CustomText';
+import Section from '../../Layout/Section';
+import { LangContext } from '../../Hook/LangContext';
+import { SimpleGrid } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { LinkBox } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
+import Link from 'next/link';
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 
 const Projet = (props) => {
-
-    const { toggleLang } = useContext(LangContext)
+    
+    const { colorMode } = useColorMode();
+    const { toggleLang } = useContext(LangContext);
     return (
         <>
-            <Container variant="Main">
-                <Section delay={0.2}>
+            <Box m = "90px auto" d = "block" maxW = "1200px" h = "auto">
+                <Section delay = {0.2}>
                     <SectionTitle>
                         {toggleLang
-                            ? "Expérience professionnel"
-                            : "Professional experience"
+                            ? 'Expérience professionnel'
+                            : 'Professional experience'
                         }
                     </SectionTitle>
-                    <SimpleGrid columns={2} spacingX="40px" spacingY="20px" textAlign="center">
+                    <Flex
+                        h = "auto"
+                        justifyContent = "space-between"
+                        flexWrap = "wrap"
+                        alignItems = "center"
+                    >
                         {props.array.map((item) =>
                             <>
-                                <Box height="120px">
-                                    <LinkBox cursor="pointer">
-                                        <Link href={`/Experience/${item.name}`} passHref>
-                                            <Text variant="ProjetLink">{item.data[ 'Title' ]}</Text>
+                                <Box
+                                    w = "580px"
+                                    h = "250px"
+                                    bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}
+                                    m = "10px"
+                                    p = {5}
+                                    borderRadius = {20}
+                                    pos = "relative"
+                                >
+                                    <SectionTitle>
+                                        {item.name}
+                                    </SectionTitle>
+                                    <Text>
+                                        {item[ 'job' ][ 'fr' ]}
+                                    </Text>
+                                    
+                                    <Button
+                                        mt = {5}
+                                        pos = "absolute"
+                                        right = {5}
+                                        bottom = {5}
+                                        colorScheme = "teal"
+                                    >
+                                        <Link href = {`Experience/${item.name}`} passHref>
+                                            <ArrowForwardIcon />
                                         </Link>
-                                    </LinkBox>
+                                    </Button>
                                 </Box>
                             </>
                         )}
-                    </SimpleGrid>
+                    </Flex>
                 </Section>
-            </Container>
+            </Box>
+        
         </>
-    )
-}
+    );
+};
 
-export default Projet
+export default Projet;
 
 export async function getStaticProps() {
-    const data = await import('../../Json/Exp.json')
-    const array = data.Experience
-
+    const data = await import('../../Json/Exp.json');
+    const array = data.Experience;
+    
     return {
-        props: {
+        props : {
             array
         }
-    }
+    };
 }
