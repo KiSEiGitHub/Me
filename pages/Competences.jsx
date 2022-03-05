@@ -1,4 +1,3 @@
-import {CheckIcon} from '@chakra-ui/icons';
 import {Badge, Box, Flex, Heading, HStack, Tag, Text, useColorMode, VStack} from '@chakra-ui/react';
 import {useContext} from 'react';
 import {LangContext} from '../Hook/LangContext';
