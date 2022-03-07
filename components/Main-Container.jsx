@@ -1,12 +1,14 @@
 import React from 'react';
-import Navbar from './Navbar';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import NewNav from './New_Nav';
+import Nav from "./Nav";
+import {useMediaQuery} from "@chakra-ui/react";
+import NavMobile from "./NavMobile";
 
 const MainContainer = (props) => {
     
     const router = useRouter();
+    const [flip] = useMediaQuery('(min-width: 540px)')
 
     return (
         <>
@@ -15,8 +17,11 @@ const MainContainer = (props) => {
                 <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
                 <link rel = "icon" href = "/Image/Fav.png" />
             </Head>
-            {/*<Navbar />*/}
-            <NewNav />
+            {flip
+                ? <Nav />
+                : <NavMobile />
+            }
+
             {props.children}
         </>
     );
