@@ -118,6 +118,7 @@ const Competences = () => {
                                 h='auto'
                                 bg={colorMode === 'light' ? '#f5f0e8' : '#313134'}
                                 m='10px 20px'
+                                boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px'
                                 borderRadius={15}
                             >
                                 <Text
@@ -146,6 +147,7 @@ const Competences = () => {
                                 h='auto'
                                 bg={colorMode === 'light' ? '#f5f0e8' : '#313134'}
                                 m='10px 20px'
+                                boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px'
                                 borderRadius={15}
                             >
                                 <Text
@@ -167,6 +169,7 @@ const Competences = () => {
                                 h='auto'
                                 bg={colorMode === 'light' ? '#f5f0e8' : '#313134'}
                                 m='10px 20px'
+                                boxShadow='rgba(0, 0, 0, 0.35) 0px 5px 15px'
                                 borderRadius={15}
                             >
                                 <Text
