@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import {
-    Box, Button, Text, useMediaQuery, Image
-} from '@chakra-ui/react';
+import { Box, Button, Image, Text, useColorMode, useMediaQuery } from '@chakra-ui/react';
 import Section from '../../Layout/Section';
 import { LangContext } from '../../Hook/LangContext';
 import { SectionTitle } from '../../Layout/CustomText';
@@ -12,8 +10,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
-import ProjetPerso from '../../Json/ProjetPerso.json';
-import ProjetCons from '../../Json/ProjetCons.json';
+import SwipeText from '../../components/SwipeText';
 
 const Projet = () => {
     
@@ -22,6 +19,7 @@ const Projet = () => {
     const Projet = require('../../Json/Projet.json');
     const ProjetPerso = require('../../Json/ProjetPerso.json');
     const ProjetCons = require('../../Json/ProjetCons.json');
+    const {colorMode} = useColorMode()
     
     return (
         <>
@@ -38,6 +36,7 @@ const Projet = () => {
                     >
                         {toggleLang ? 'Projets d\'école' : 'School projects'}
                     </Text>
+                    <SwipeText />
                     <Box
                         d = "flex"
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
