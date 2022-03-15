@@ -201,6 +201,13 @@
         "fr" : "Faire un site ecommerce à thème utilisant le CDN prestashop avec la possibilité d'avoir par exemple :"
       }
     },
+    "Snake": {
+      "DescriptionProjet": {
+        "fr" : "Pour le premier projet en C, nous avons eu le choix entre trois thèmes :",
+        "en" : "LALALLALA",
+        "fr2" : "Nous avons choisi le jeu du "
+      }
+    },
     "Portfolio": {
       "Description": {
         "FR": "React est le framework JavaScript optimisé pour la création d'application web monopage. J'ai choisis de faire de mon portfolio une application web multi-page. C'est donc pour ça que j'ai utilisé Next.js qui offre la possiblité de faire du rooting nativement.",

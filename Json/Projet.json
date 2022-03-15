@@ -17,6 +17,15 @@
         "en": "pas de description"
       },
       "Link": "/Projets/HardwareSeven"
+    },
+    {
+      "Photo" : "https://images.unsplash.com/photo-1546992772-3318f1f3a1be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1418&q=80",
+      "Title" : "Snake",
+      "Description" : {
+        "fr" : "Un projet de groupe fait en C, le jeu du snake !",
+        "en" : "en"
+      },
+      "Link" : "/Projets/Snake"
     }
   ]
 }
