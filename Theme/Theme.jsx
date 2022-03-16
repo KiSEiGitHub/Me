@@ -67,7 +67,7 @@ const components = {
     Container : {
         variants : {
             Main             : {
-                mt : '100px',
+                mt : '60px',
                 p  : '0 35px'
             },
             'Main-Projet'    : {
