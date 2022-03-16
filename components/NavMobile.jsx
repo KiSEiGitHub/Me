@@ -14,7 +14,7 @@ const NavMobile = () => {
         <>
             <HStack
                 spacing={10}
-                h='60px'
+                h='45px'
                 justifyContent='space-between'
                 p={'0 10px'}
                 bg={useColorModeValue('ffffff40', '#20202380')}
