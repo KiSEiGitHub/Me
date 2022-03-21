@@ -14,25 +14,33 @@ const Nav = () => {
 
     return (
         <>
-            <HStack
-                spacing={10}
-                h='65px'
-                justifyContent='center'
+            <Box
+                h='45px'
                 bg={useColorModeValue('ffffff40', '#20202380')}
                 pos='fixed'
                 top={0}
                 backdropFilter="blur(10px)"
-                alignItems='center'
                 left="50%"
                 transform="translateX(-50%)"
-                zIndex={9999}
                 w='100%'
+                zIndex={99999}
+                d='flex'
+                alignItems='center'
+                justifyContent='center'
             >
-                <HStack spacing={1}>
+                <Box
+                    w='200px'
+                    h='45px'
+                    m='10px'
+                    d='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                >
                     <Img
                         src={'/Image/moshicatwhite.png'}
                         alt='moshi'
-                        w='60px'
+                        w='62px'
+                        h="20"
                         pos='relative'
                         top='-5px'
                     />
@@ -49,14 +57,22 @@ const Nav = () => {
                             Tom
                         </Link>
                     </Text>
-                </HStack>
-                <HStack spacing={5}>
+                </Box>
+                <Box
+                    w='500px'
+                    h='45px'
+                    m='10px'
+                    d='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                >
                     <NavLink href={'/Experience'}>
                         <Box
                             bg={asPath === '/Experience' ? '#ff63c3' : ''}
                             p={asPath === '/Experience' ? '5px' : ''}
                             textUnderlineOffset={6}
                             textDecoration={asPath === '/Experience' ? 'underline' : ''}
+                            m={2}
                         >
                             {toggleLang ? 'Expériences' : 'Experiences'}
                         </Box>
@@ -67,6 +83,7 @@ const Nav = () => {
                             p={asPath === '/Projets' ? '5px' : ''}
                             textUnderlineOffset={6}
                             textDecoration={asPath === '/Projets' ? 'underline' : ''}
+                            m={2}
                         >
                             {toggleLang ? 'Projets' : 'Projects'}
                         </Box>
@@ -77,16 +94,23 @@ const Nav = () => {
                             p={asPath === '/Competences' ? '5px' : ''}
                             textUnderlineOffset={6}
                             textDecoration={asPath === '/Competences' ? 'underline' : ''}
+                            m={2}
                         >
                             {toggleLang ? 'Compétences' : 'Skills'}
                         </Box>
                     </NavLink>
-                </HStack>
-                <HStack spacing={1}>
-                    <ThemeToggleButton/>
-                    <LangToggleButton/>
-                </HStack>
-            </HStack>
+                </Box>
+                <Box
+                    w='200px'
+                    h='45px'
+                    m='10px'
+                    d='flex'
+                    justifyContent='center'
+                >
+                    <ThemeToggleButton />
+                    <LangToggleButton />
+                </Box>
+            </Box>
         </>
     );
 };

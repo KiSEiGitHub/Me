@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useRef, useState} from 'react';
 import {Box, Container, ListItem, Tag, Text, UnorderedList, useColorMode} from '@chakra-ui/react';
 import Section from '../../Layout/Section';
-import {ExtLink, ParaIndent, SectionTitle} from '../../Layout/CustomText';
+import {ExtLink, Para, ParaIndent, SectionTitle} from '../../Layout/CustomText';
 import {LangContext} from '../../Hook/LangContext';
 import {TextContext} from '../../Hook/TextContext';
 import BtnReturnPro from '../../components/BtnReturnPro';
@@ -82,6 +82,13 @@ const HardwareSeven = () => {
                 </Section>
 
                 <Section delay={0.4}>
+                    <SectionTitle>Thèmes</SectionTitle>
+                    <ParaIndent>
+                        Boutique sur la vente de composants d&apos;ordinateurs.
+                    </ParaIndent>
+                </Section>
+
+                <Section delay={0.5}>
                     <SectionTitle>{toggleLang ? 'Tâches' : 'Tasks'}</SectionTitle>
                     <ParaIndent>
                         {DataProject['HardwareSeven']['Tache']['fr']}
