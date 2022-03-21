@@ -20,8 +20,8 @@ export const ParaIndent = ({children}) => (
     </Text>
 );
 
-export const SectionTitle = ({children}) => (
-    <Text variant="section-title">
+export const SectionTitle = ({children, textAlign}) => (
+    <Text variant="section-title" textAlign={textAlign}>
         {children}
     </Text>
 );
