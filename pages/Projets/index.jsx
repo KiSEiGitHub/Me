@@ -110,6 +110,7 @@ const Projet = () => {
                     >
                         {toggleLang ? 'Projets personnel' : 'Personnal projects'}
                     </Text>
+                    <SwipeText />
                     <Box
                         d = "flex"
                         justifyContent = {BreakPoint ? 'space-between' : 'center'}
