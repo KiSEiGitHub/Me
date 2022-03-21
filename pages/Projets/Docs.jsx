@@ -51,9 +51,12 @@ const Docs = () => {
                 <Section delay={0.5}>
                     <SectionTitle>Puis-je contribuer ?</SectionTitle>
                     <ParaIndent>
-                        {DataProject['Docs']['Contribute']['fr']} {' '}
+                        {toggleLang
+                            ? DataProject['Docs']['Contribute']['fr']
+                            : DataProject['Docs']['Contribute']['en']
+                        } {' '}
                         <ExtLink href={"https://github.com/KiSEiGitHub/Basic-prog-lang/blob/master/README.md"}>
-                            ici
+                            {toggleLang ? 'ici' : 'here'}
                         </ExtLink>
                     </ParaIndent>
                 </Section>

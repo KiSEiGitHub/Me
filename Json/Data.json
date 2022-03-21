@@ -207,7 +207,8 @@
         "en": "Docs is an open source project that bings all documentation for all programming language in a simplified version, so the beginners are not overload with too much information."
       },
       "Contribute" : {
-        "fr" : "Si vous-voulez m'aider à développer Docs, vous pouvez trouver toutes les informations "
+        "fr" : "Si vous-voulez m'aider à développer Docs, vous pouvez trouver toutes les informations ",
+        "en" : "If you want to help me with Docs, you can find the documentation "
       }
     },
     "Portfolio": {
