@@ -72,7 +72,7 @@
         "Do": "Télécom & Réseaux",
         "Desc": "Mise en place du réseau informatique d'une entreprise",
         "EntrepriseLink": "https://www.justacote.com/saint-fargeau-ponthierry-77310/electricien/eurocom-services-948114.htm",
-        "NextLink" : "/Experience/Eurocom"
+        "NextLink": "/Experience/Eurocom"
       },
       "EN": {
         "Title": "Eurocom",
@@ -91,7 +91,7 @@
         "Do": "Cybersécurité",
         "Desc": "Aide au support concernant les problèmes des utilisateurs de leur logiciel",
         "EntrepriseLink": "https://www.csnovidys.com/",
-        "NextLink" : "/Experience/Novidys"
+        "NextLink": "/Experience/Novidys"
       },
       "EN": {
         "Title": "Novidy's",
@@ -110,7 +110,7 @@
         "Do": "Modélisation 3D",
         "Desc": "Observation de la conception de caméra 3D, aide à la refonte du site internet de l'entreprise",
         "EntrepriseLink": "https://www.diota.com/fr/",
-        "NextLink" : "/Experience/DiotaSoft"
+        "NextLink": "/Experience/DiotaSoft"
       },
       "EN": {
         "Title": "DiotaSoft",
@@ -129,7 +129,7 @@
         "Do": "Vapo Shop",
         "Desc": "Aide de la conception d'un site d'e-commerce à l'aide de shopify",
         "EntrepriseLink": "https://www.facebook.com/Mill-Vap-356077231640627/",
-        "NextLink" : "/Experience/MillVap"
+        "NextLink": "/Experience/MillVap"
       },
       "EN": {
         "Title": "Mill'Vap",
@@ -196,9 +196,18 @@
         "EN2": "Create a form to insert a flight, a pilot, an airport or a plane, and their associated pages to be able to display the present elements in each table"
       }
     },
-    "HardwareSeven" : {
-      "Tache" : {
-        "fr" : "Faire un site ecommerce à thème utilisant le CDN prestashop avec la possibilité d'avoir par exemple :"
+    "HardwareSeven": {
+      "Tache": {
+        "fr": "Faire un site ecommerce à thème utilisant le CDN prestashop avec la possibilité d'avoir par exemple :"
+      }
+    },
+    "Docs": {
+      "Description": {
+        "fr": "Docs est un projet open source qui regroupe toutes les documentations de tous les langages en version simplifié pour ne pas trop surchargé d'information les débutants.",
+        "en": "Docs is an open source project that bings all documentation for all programming language in a simplified version, so the beginners are not overload with too much information."
+      },
+      "Contribute" : {
+        "fr" : "Si vous-voulez m'aider à développer Docs, vous pouvez trouver toutes les informations "
       }
     },
     "Portfolio": {
