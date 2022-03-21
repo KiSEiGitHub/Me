@@ -20,7 +20,8 @@ const styles = {
             fontFamily                   : '@import url(\'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap\');',
             '&::-webkit-scrollbar'       : {
                 width        : 2,
-                borderRadius : '20px'
+                borderRadius : '20px',
+                d            : 'none'
             },
             '&::-webkit-scrollbar-track' : {
                 borderRadius : '20px'
