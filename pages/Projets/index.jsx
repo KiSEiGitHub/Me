@@ -21,8 +21,8 @@ const Projet = () => {
                 <Section delay={0.3}>
                     <SectionTitle textAlign='center'>
                         {toggleLang
-                            ? "Projets d'école"
-                            : "School projects"
+                            ? "École"
+                            : "School"
                         }
                     </SectionTitle>
                     {BreakPoint
@@ -34,8 +34,8 @@ const Projet = () => {
                 <Section delay={0.4}>
                     <SectionTitle textAlign='center'>
                         {toggleLang
-                            ? "Projets perso"
-                            : 'Personnal projects'
+                            ? "Personnel"
+                            : 'Personnal'
                         }
                     </SectionTitle>
                     {BreakPoint
@@ -47,8 +47,8 @@ const Projet = () => {
                 <Section delay={0.5}>
                     <SectionTitle textAlign='center'>
                         {toggleLang
-                            ? 'Projets console'
-                            : 'Console projects'
+                            ? 'Console'
+                            : 'Console'
                         }
                     </SectionTitle>
                     {BreakPoint

@@ -14,7 +14,7 @@
       "Title" : "HardwareSeven",
       "Description": {
         "fr": "Un projet de groupe sur le thème d'un site d'e-commerce sur les composants hardware",
-        "en": "pas de description"
+        "en": "A group project based on the hardware components e-shop theme"
       },
       "Link": "/Projets/HardwareSeven"
     },
@@ -23,7 +23,7 @@
       "Title" : "Snake",
       "Description" : {
         "fr" : "Un projet de groupe fait en C, le jeu du snake !",
-        "en" : "en"
+        "en" : "A C project made for the snake game"
       },
       "Link" : "/Projets/Snake"
     }
