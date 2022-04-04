@@ -107,8 +107,8 @@ const Nav = () => {
                     d='flex'
                     justifyContent='center'
                 >
-                    <ThemeToggleButton />
-                    <LangToggleButton />
+                    <ThemeToggleButton/>
+                    <LangToggleButton/>
                 </Box>
             </Box>
         </>
