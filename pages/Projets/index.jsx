@@ -12,7 +12,7 @@ import {SectionTitle} from "../../Layout/CustomText";
 const Projet = () => {
 
     const {toggleLang} = useContext(LangContext);
-    const [BreakPoint] = useMediaQuery('(min-width: 1024px)');
+    const [BreakPoint] = useMediaQuery('(min-width: 1166px)');
 
     return (
         <>
