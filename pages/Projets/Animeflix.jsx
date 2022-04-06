@@ -47,7 +47,7 @@ const Animeflix = () => {
                 </Section>
                 
                 <Section delay = {0.5}>
-                    <SectionTitle>🥴</SectionTitle>
+                    <SectionTitle>Oui</SectionTitle>
                     <ParaIndent>
                         Juste, pour rappel. Il n&apos;y a aucun épisode / film sur le "site".
                         Vous savez pourquoi 🤣. <br />
@@ -61,7 +61,7 @@ const Animeflix = () => {
                 </Section>
                 
                 <Section delay = {0.5}>
-                    <SectionTitle>🤧</SectionTitle>
+                    <SectionTitle>Zzz</SectionTitle>
                     <ParaIndent>
                         Je voulais vraiment appeler le "site", "Animeflix", j&apos;ai trouvé que c&apos;était un bon
                         nom, mais c&apos;était déjà pris. Vue que ce projet c&apos;est pas vraiment du sérieux avec un
