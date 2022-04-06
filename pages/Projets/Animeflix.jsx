@@ -49,7 +49,7 @@ const Animeflix = () => {
                 <Section delay = {0.5}>
                     <SectionTitle>Oui</SectionTitle>
                     <ParaIndent>
-                        Juste, pour rappel. Il n&apos;y a aucun épisode / film sur le "site".
+                        Juste, pour rappel. Il n&apos;y a aucun épisode / film sur le &quot;site&quot;.
                         Vous savez pourquoi. <br />
                         Je me suis juste contenté de mettre des photos trouver sur internet ainsi que les descriptions
                         déjà présente sur {' '}
@@ -63,7 +63,7 @@ const Animeflix = () => {
                 <Section delay = {0.5}>
                     <SectionTitle>Zzz</SectionTitle>
                     <ParaIndent>
-                        Je voulais vraiment appeler le "site", "Animeflix", j&apos;ai trouvé que c&apos;était un bon
+                        Je voulais vraiment appeler le &quot;site&quot;, &quot;Animeflix&quot;, j&apos;ai trouvé que c&apos;était un bon
                         nom, mais c&apos;était déjà pris. Vue que ce projet c&apos;est pas vraiment du sérieux avec un
                         réel impact, j&apos;ai décidé de laisser le nom. Mais le site original que j&apos;ai trouvé est {' '}
                         <ExtLink href='https://anime-flix.net/'>
