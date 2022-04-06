@@ -50,7 +50,7 @@ const Animeflix = () => {
                     <SectionTitle>Oui</SectionTitle>
                     <ParaIndent>
                         Juste, pour rappel. Il n&apos;y a aucun épisode / film sur le "site".
-                        Vous savez pourquoi 🤣. <br />
+                        Vous savez pourquoi. <br />
                         Je me suis juste contenté de mettre des photos trouver sur internet ainsi que les descriptions
                         déjà présente sur {' '}
                         <ExtLink href = {'https://www.netflix.com/'}>
