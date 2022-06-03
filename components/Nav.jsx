@@ -93,7 +93,7 @@ const Nav = () => {
                             bg = {asPath === '/Bts' ? '#ff63c3' : ''}
                             p = {asPath === '/Bts' ? '5px' : ''}
                             textUnderlineOffset = {6}
-                            textDecoration = {asPath === '/Bts' ? 'underline' : ''}
+                            textDecoration = {asPath === '/Index' ? 'underline' : ''}
                             m = {2}
                         >
                             {toggleLang ? 'BTS' : 'BTS'}
