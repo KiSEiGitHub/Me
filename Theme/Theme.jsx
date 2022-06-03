@@ -68,8 +68,9 @@ const components = {
     Container : {
         variants : {
             Main             : {
-                mt : '60px',
-                p  : '0 35px'
+                mt  : '60px',
+                p   : '0 35px',
+                pos : 'relative'
             },
             'Main-Projet'    : {
                 mt : '100px',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container} from '@chakra-ui/react';
+import { Container, ListItem, UnorderedList } from '@chakra-ui/react';
 import Section from '../../Layout/Section';
 import { ItalicText, Para, ParaIndent, SectionTitle } from '../../Layout/CustomText';
 import { Linkk } from '../../Layout/NavLink';
@@ -8,27 +8,35 @@ const Bts = () => {
     return (
         <>
             <Container variant = "Main">
+                
                 <Section delay = {0.4}>
                     <SectionTitle>BTS SIO</SectionTitle>
                     <ParaIndent mb = {2}>
                         Le BTS <span style = {{ fontStyle : 'italic' }}>Service Informatique aux Organisation</span>
                         {' '}est un diplôme reconnu par l&apos;état de niveau Bac+2.
                     </ParaIndent>
-                    <ParaIndent>
+                    <Para mb = {2}>
                         Le programme a évolué en fonction de la place et du rôle des TIC
                         <ItalicText>(Technologies d’Information Communication)</ItalicText>
                         et
                         propose deux spécialités bien distinctes : {' '}
-                        <Linkk href = {'/Bts/Sisr'}>
-                            le BTS SIO SISR
-                        </Linkk>
-                        {' '} et {' '}
-                        <Linkk href = {'/Bts/Slam'}>
-                            le BTS SIO SLAM.
-                        </Linkk>
-                    
-                    </ParaIndent>
+                    </Para>
+                    <UnorderedList>
+                        <ListItem>
+                            BTS SIO {' '}
+                            <Linkk href = {'/Bts/Slam'}>
+                                SLAM
+                            </Linkk>
+                        </ListItem>
+                        <ListItem>
+                            BTS SIO {' '}
+                            <Linkk href = {'/Bts/Sisr'}>
+                                SISR
+                            </Linkk>
+                        </ListItem>
+                    </UnorderedList>
                 </Section>
+                
                 <Section delay = {0.5}>
                     <SectionTitle>Veille technologique</SectionTitle>
                     <ParaIndent mb = {2}>
@@ -39,7 +47,15 @@ const Bts = () => {
                         sur
                         leur mise à disposition commerciale.
                     </Para>
+                    <Para mt = {2}>
+                        J&apos;ai décidé de parler de {' '}
+                        <Linkk href = {'/'}>
+                            ...
+                        </Linkk>
+                        {' '} pour ma veille technologique.
+                    </Para>
                 </Section>
+                
                 <Section delay = {0.6}>
                     <SectionTitle>Veille Juridique</SectionTitle>
                 </Section>

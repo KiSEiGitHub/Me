@@ -21,7 +21,7 @@ export const NavLink = ({ children, href }) => (
 
 export const Linkk = ({ children, href }) => (
     <Text
-        d = "inline"
+        display = "inline"
         color = "#ff63c3"
         _hover = {{
             textDecoration : 'underline',
@@ -29,6 +29,22 @@ export const Linkk = ({ children, href }) => (
     >
         <Link href = {href}>
             {children}
+        </Link>
+    </Text>
+);
+
+export const LinkBlank = ({ children, href }) => (
+    <Text
+        display = "inline"
+        color = "#ff63c3"
+        _hover = {{
+            textDecoration : 'underline',
+        }}
+    >
+        <Link href={href}>
+            <a target='_blank'>
+                {children}
+            </a>
         </Link>
     </Text>
 );
