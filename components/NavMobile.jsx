@@ -116,7 +116,7 @@ const NavMobile = () => {
                         </MenuList>
                     </Menu>
                     <ThemeToggleButton />
-                    <LangToggleButton />
+                    {/*<LangToggleButton />*/}
                 </HStack>
             </HStack>
         </>

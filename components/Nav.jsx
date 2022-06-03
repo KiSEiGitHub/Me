@@ -119,7 +119,7 @@ const Nav = () => {
                     justifyContent = "center"
                 >
                     <ThemeToggleButton />
-                    <LangToggleButton />
+                    {/*<LangToggleButton />*/}
                 </Box>
             </Box>
         </>
