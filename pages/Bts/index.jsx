@@ -43,7 +43,7 @@ const Bts = () => {
                         Qu&apos;est-ce qu&apos;une veille technologique ?
                     </ParaIndent>
                     <Para>
-                        Elle consiste à s'informer de façon systématique sur les techniques les plus récentes et surtout
+                        Elle consiste à s&apos;informer de façon systématique sur les techniques les plus récentes et surtout
                         sur
                         leur mise à disposition commerciale.
                     </Para>

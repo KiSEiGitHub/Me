@@ -19,7 +19,7 @@ const Slam = () => {
                 <Section delay = {0.5}>
                     <SectionTitle>À savoir</SectionTitle>
                     <ParaIndent>
-                        L&apos;élève du BTS SIO option SISR acquiert les compétences de trois domaines d'activités dont deux
+                        L&apos;élève du BTS SIO option SISR acquiert les compétences de trois domaines d&apos;activités dont deux
                         en commun avec le BTS SIO option {' '}
                         <LinkBlank href = {'./Slam'}>
                             SLAM
