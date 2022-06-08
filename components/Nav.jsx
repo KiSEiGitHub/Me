@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Box, HStack, Img, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, HStack, Img, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import Link from 'next/link';
 import { NavLink } from '../Layout/NavLink';
 import ThemeToggleButton from './theme-toggle-boutton';
@@ -11,6 +11,14 @@ const Nav = () => {
     
     const { toggleLang } = useContext(LangContext);
     const { asPath } = useRouter();
+    const {colorMode} = useColorMode()
+    let color;
+    
+    if(colorMode === 'light') {
+        color = '#3d7aed'
+    } else {
+        color = '#ff63c3'
+    }
     
     return (
         <>
@@ -68,8 +76,9 @@ const Nav = () => {
                 >
                     <NavLink href = {'/Experience'}>
                         <Box
-                            bg = {asPath === '/Experience' ? '#ff63c3' : ''}
+                            bg = {asPath === '/Experience' ? color : ''}
                             p = {asPath === '/Experience' ? '5px' : ''}
+                            color = {asPath === '/Experience' ? '#fff' : ''}
                             textUnderlineOffset = {6}
                             textDecoration = {asPath === '/Experience' ? 'underline' : ''}
                             m = {2}
@@ -79,8 +88,9 @@ const Nav = () => {
                     </NavLink>
                     <NavLink href = {'/Projets'}>
                         <Box
-                            bg = {asPath === '/Projets' ? '#ff63c3' : ''}
+                            bg = {asPath === '/Projets' ? color : ''}
                             p = {asPath === '/Projets' ? '5px' : ''}
+                            color = {asPath === '/Projets' ? '#fff' : ''}
                             textUnderlineOffset = {6}
                             textDecoration = {asPath === '/Projets' ? 'underline' : ''}
                             m = {2}
@@ -90,8 +100,9 @@ const Nav = () => {
                     </NavLink>
                     <NavLink href = {'/Bts'}>
                         <Box
-                            bg = {asPath === '/Bts' ? '#ff63c3' : ''}
+                            bg = {asPath === '/Bts' ? color : ''}
                             p = {asPath === '/Bts' ? '5px' : ''}
+                            color = {asPath === '/Bts' ? '#fff' : ''}
                             textUnderlineOffset = {6}
                             textDecoration = {asPath === '/Index' ? 'underline' : ''}
                             m = {2}
@@ -101,8 +112,9 @@ const Nav = () => {
                     </NavLink>
                     <NavLink href = {'/Competences'}>
                         <Box
-                            bg = {asPath === '/Competences' ? '#ff63c3' : ''}
+                            bg = {asPath === '/Competences' ? color : ''}
                             p = {asPath === '/Competences' ? '5px' : ''}
+                            color = {asPath === '/Competences' ? '#fff' : ''}
                             textUnderlineOffset = {6}
                             textDecoration = {asPath === '/Competences' ? 'underline' : ''}
                             m = {2}

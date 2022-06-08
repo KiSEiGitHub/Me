@@ -48,9 +48,9 @@ const Bts = () => {
                         leur mise à disposition commerciale.
                     </Para>
                     <Para mt = {2}>
-                        J&apos;ai décidé de parler de {' '}
-                        <Linkk href = {'/'}>
-                            ...
+                        J&apos;ai décidé de parler de la {' '}
+                        <Linkk href = {'/Bts/VeilleTech'}>
+                            cybersécurité
                         </Linkk>
                         {' '} pour ma veille technologique.
                     </Para>

@@ -1,5 +1,4 @@
-import { Text } from '@chakra-ui/react';
-import React from 'react';
+import { Text, useColorMode } from '@chakra-ui/react';
 import Link from 'next/link';
 
 export const NavLink = ({ children, href }) => (
@@ -19,32 +18,45 @@ export const NavLink = ({ children, href }) => (
     </Text>
 );
 
-export const Linkk = ({ children, href }) => (
-    <Text
-        display = "inline"
-        color = "#ff63c3"
-        _hover = {{
-            textDecoration : 'underline',
-        }}
-    >
-        <Link href = {href}>
-            {children}
-        </Link>
-    </Text>
-);
-
-export const LinkBlank = ({ children, href }) => (
-    <Text
-        display = "inline"
-        color = "#ff63c3"
-        _hover = {{
-            textDecoration : 'underline',
-        }}
-    >
-        <Link href={href}>
-            <a target='_blank'>
+export const Linkk = ({ children, href }) => {
+    
+    const { colorMode } = useColorMode();
+    
+    return (
+        
+        <Text
+            display = "inline"
+            color = {colorMode === 'light' ? '#3d7aed' : '#ff63c3'}
+            _hover = {{
+                textDecoration : 'underline',
+            }}
+        >
+            <Link href = {href}>
                 {children}
-            </a>
-        </Link>
-    </Text>
-);
+            </Link>
+        </Text>
+    );
+    
+};
+
+export const LinkBlank = ({ children, href }) => {
+    
+    const { colorMode } = useColorMode();
+    
+    return (
+        <Text
+            display = "inline"
+            color = {colorMode === 'light' ? '#3d7aed' : '#ff63c3'}
+            _hover = {{
+                textDecoration : 'underline',
+            }}
+        >
+            <Link href = {href}>
+                <a target = "_blank">
+                    {children}
+                </a>
+            </Link>
+        </Text>
+    );
+    
+};
