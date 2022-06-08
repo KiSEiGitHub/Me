@@ -58,6 +58,20 @@ const Bts = () => {
                 
                 <Section delay = {0.6}>
                     <SectionTitle>Veille Juridique</SectionTitle>
+                    <ParaIndent mb = {2}>
+                        Qu&apos;est-ce qu&apos;une veille juridique ?
+                    </ParaIndent>
+                    <Para>
+                        Une veille juridique est un ensemble d’actions permettant de se tenir au fait des informations
+                        pertinentes dans les domaines législatif, réglementaire, jurisprudentiel, voire doctrinal.
+                    </Para>
+                    <Para mt = {2}>
+                        J&apos;ai décidé de parler de la {' '}
+                        <Linkk href = {'/'}>
+                            ...
+                        </Linkk>
+                        {' '} pour ma veille juridique.
+                    </Para>
                 </Section>
             </Container>
         </>
