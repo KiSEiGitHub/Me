@@ -1,0 +1,44 @@
+{
+  "BTS": {
+    "SLAM": [
+      {
+        "Para": {
+          "Short": " l'élève sera capable de répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants ; il sera aussi en mesure de prendre en compte les besoins informatiques dans l'entreprise...",
+          "Long": " l'élève sera capable de répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants ; il sera aussi en mesure de prendre en compte les besoins informatiques dans l'entreprise et d'accompagner la transformation numérique des services informatiques, tout en maintenant son employabilité. Il acquiert ainsi les compétences pour gérer le patrimoine informatique, répondre aux incidents, développer la présence de l'entreprise sur le Web, organiser son propre développement professionnel."
+        }
+      },
+      {
+        "Para": {
+          "Short": "l'élève est formé à la cybersécurité et à son intégration dans l'entreprise en tenant compte des dimensions techniques, organisationnelles, juridiques...",
+          "Long": " l'élève est formé à la cybersécurité et à son intégration dans l'entreprise en tenant compte des dimensions techniques, organisationnelles, juridiques... Il obtient ainsi des compétences sur la protection des données et l'identité numérique de l'entreprise, la sécurisation des équipements et usages des utilisateurs. Option SLAM : il est formé à la cybersécurisation d'une solution applicative et de son développement."
+        }
+      },
+      {
+        "Para": {
+          "Short": "l'élève participera à la conception, au développement, ainsi qu'au déploiement et à la maintenance des composants logiciels...",
+          "Long": " l'élève participera à la conception, au développement, ainsi qu'au déploiement et à la maintenance des composants logiciels d'une solution applicative. Il acquiert ainsi des compétences en conception et développement d'une solution applicative, en maintenance de celle-ci, mais aussi en bases de données et en gestion des données numériques."
+        }
+      }
+    ],
+    "SISR": [
+      {
+        "Para": {
+          "Short": " l'élève sera capable de répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants ; il sera aussi en mesure de prendre en compte les besoins informatiques...",
+          "Long": " l'élève sera capable de répondre aux attentes des utilisateurs en assurant la disponibilité des services informatiques existants ; il sera aussi en mesure de prendre en compte les besoins informatiques dans l'entreprise et d'accompagner la transformation numérique des services informatiques, tout en maintenant son employabilité. Il acquiert ainsi les compétences pour gérer le patrimoine informatique, répondre aux incidents, développer la présence de l'entreprise sur le Web, organiser son propre développement professionnel."
+        }
+      },
+      {
+        "Para": {
+          "Short": " l'élève est formé à la cybersécurité et à son intégration dans l'entreprise en tenant compte des dimensions techniques, organisationnelles, juridiques...",
+          "Long": "l'élève est formé à la cybersécurité et à son intégration dans l'entreprise en tenant compte des dimensions techniques, organisationnelles, juridiques... Il obtient ainsi des compétences sur la protection des données et l'identité numérique de l'entreprise, la sécurisation des équipements et usages des utilisateurs. Option SISR: il est formé à la cybersécurisation d'une infrastructure réseau, d'un système ou d'un service informatique."
+        }
+      },
+      {
+        "Para": {
+          "Short": " le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure...",
+          "Long": " le titulaire participera à l'administration des systèmes et du réseau, il sera capable de modifier ou d'adapter les solutions d'infrastructure ainsi que la qualité de service des équipements du réseaux. Il acquiert ainsi les compétences pour concevoir une solution d'infrastructure réseau, l'installer, la tester et la déployer. L'élève apprend aussi à administrer et superviser ce réseau."
+        }
+      }
+    ]
+  }
+}

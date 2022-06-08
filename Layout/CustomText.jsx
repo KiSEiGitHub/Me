@@ -8,14 +8,14 @@ export const ExtLink = ({children, href}) => (
     </Link>
 );
 
-export const Para = ({children}) => (
-    <Text variant="Para">
+export const Para = ({children, mt, mb}) => (
+    <Text variant="Para" mt={mt} mb={mb}>
         {children}
     </Text>
 );
 
-export const ParaIndent = ({children}) => (
-    <Text variant="ParaIndent">
+export const ParaIndent = ({children, mt, mb}) => (
+    <Text variant="ParaIndent" mt={mt} mb={mb}>
         {children}
     </Text>
 );
@@ -28,6 +28,12 @@ export const SectionTitle = ({children, textAlign}) => (
 
 export const ParaNoJus = ({children}) => (
     <Text variant="ParaNoJus">
+        {children}
+    </Text>
+)
+
+export const ItalicText = ({children}) => (
+    <Text variant="italic">
         {children}
     </Text>
 )
