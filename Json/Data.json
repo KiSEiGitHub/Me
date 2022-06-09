@@ -206,16 +206,16 @@
         "fr": "Docs est un projet open source qui regroupe toutes les documentations de tous les langages en version simplifié pour ne pas trop surchargé d'information les débutants.",
         "en": "Docs is an open source project that bings all documentation for all programming language in a simplified version, so the beginners are not overload with too much information."
       },
-      "Contribute" : {
-        "fr" : "Si vous-voulez m'aider à développer Docs, vous pouvez trouver toutes les informations ",
-        "en" : "If you want to help me with Docs, you can find the documentation "
+      "Contribute": {
+        "fr": "Si vous-voulez m'aider à développer Docs, vous pouvez trouver toutes les informations ",
+        "en": "If you want to help me with Docs, you can find the documentation "
       }
     },
     "Snake": {
       "DescriptionProjet": {
-        "fr" : "Pour le premier projet en C, nous avons eu le choix entre trois thèmes :",
-        "en" : "LALALLALA",
-        "fr2" : "Nous avons choisi le jeu du "
+        "fr": "Pour le premier projet en C, nous avons eu le choix entre trois thèmes :",
+        "en": "LALALLALA",
+        "fr2": "Nous avons choisi le jeu du "
       }
     },
     "Portfolio": {
@@ -233,6 +233,9 @@
         "FR": "Ce portfolio est voué à changer, j'ai apporterai des mises à jour quand j'aurai de nouvelle chose à vous présentez. Vous pourrez retrouver les nouveautées avenir sur le lien en dessous.",
         "EN": "This portfolio is destined to change in the futur. You can check on the link below the new and the update which is incomming."
       }
+    },
+    "Leveling": {
+      "Description": "Leveling est un site mélangeant le réseau social, jeux vidéo et communauté."
     }
   }
 }

@@ -72,6 +72,10 @@ const components = {
                 p   : '0 35px',
                 pos : 'relative'
             },
+            'Full-W'         : {
+                maxW : '100%',
+                h    : 'auto',
+            },
             'Main-Projet'    : {
                 mt : '100px',
                 p  : '0 35px',

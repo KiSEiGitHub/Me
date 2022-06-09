@@ -29,7 +29,7 @@ export const ProjetEcole = () => {
                 {Projet.Projet.map((item) =>
                     <>
                         <Box
-                            maxW = "450px" maxH = "550px"
+                            W = "450" maxH = "auto"
                             bg = {colorMode === 'light' ? '#f5f0e8' : '#313134'}
                             m = "5px 10px"
                             pos = "relative"
