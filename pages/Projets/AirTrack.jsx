@@ -26,10 +26,16 @@ const AirTrack = () => {
     const { toggleLang } = useContext(LangContext);
     const { DataProject } = useContext(TextContext);
     
-    const Tab = [
-        AeroTab, AeroTab, AvionTab, AvionTab,
-        PiloteForm, PiloteTab, VolTab, VolForm
-    ];
+    const Oui = [
+        {id: 1, img: AeroTab},
+        {id: 2, img: AeroForm},
+        {id: 3, img: AvionTab},
+        {id: 4, img: AvionForm},
+        {id: 5, img: PiloteForm},
+        {id: 6, img: PiloteTab},
+        {id: 7, img: VolTab},
+        {id: 8, img: VolForm}
+    ]
     
     return (
         <>
@@ -146,10 +152,10 @@ const AirTrack = () => {
                             }}
                             modules = {[Pagination]}
                         >
-                            {Tab.map((item) => {
+                            {Oui.map((item) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Image src = {item} alt = "photo" width = {'870px'} height = {'750px'} />
+                                    <SwiperSlide key={item.id}>
+                                        <Image src = {item.img} alt = "photo" width = {'870px'} height = {'750px'} />
                                     </SwiperSlide>
                                 );
                             })}
@@ -158,10 +164,10 @@ const AirTrack = () => {
                     
                     <Box maxW = "100%" display = {{ xl : 'none', md : 'block', sm : 'block', lg : 'none' }}>
                         <Swiper>
-                            {Tab.map((item) => {
+                            {Oui.map((item) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Image src = {item} alt = "photo" />
+                                    <SwiperSlide key={item.id}>
+                                        <Image src = {item.img} alt = "photo" />
                                     </SwiperSlide>
                                 );
                             })}
