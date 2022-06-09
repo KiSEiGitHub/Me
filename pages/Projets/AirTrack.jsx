@@ -26,6 +26,11 @@ const AirTrack = () => {
     const { toggleLang } = useContext(LangContext);
     const { DataProject } = useContext(TextContext);
     
+    const Tab = [
+        AeroTab, AeroTab, AvionTab, AvionTab,
+        PiloteForm, PiloteTab, VolTab, VolForm
+    ];
+    
     return (
         <>
             <Container variant = "Main">
@@ -126,49 +131,42 @@ const AirTrack = () => {
                         }
                     </Text>
                 </Section>
-                
-                <Section delay = {0.5}>
-                    <SectionTitle>{toggleLang ? 'Maquette' : 'Model'}</SectionTitle>
-                    <Swiper
-                        pagination = {{
-                            dynamicBullets : true,
-                        }}
-                        grabCursor = {true}
-                        modules = {[Pagination]}
-                        style = {{
-                            margin  : '0 auto',
-                            display : 'block'
-                        }}
-                    >
-                        <SwiperSlide>
-                            <Image src = {AeroForm} alt = {'Formulaire aéroport'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {AeroTab} alt = {'Tableau aéroport'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {VolForm} alt = {'Formulaire Vol'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {VolTab} alt = {'Tableau Vol'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {AvionForm} alt = {'Formulaire avion'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {AvionTab} alt = {'Formulaire Tableau'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {PiloteForm} alt = {'Formulaire Pilotes'} />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src = {PiloteTab} alt = {'Pilotes tableau'} />
-                        </SwiperSlide>
-                    </Swiper>
-                </Section>
-                
-                <Section delay = {0.4}>
-                    <BtnReturnPro />
+            </Container>
+            
+            <Container variant = "Full-W">
+                <Section delay = {0.6}>
+                    <SectionTitle textAlign = "center">Maquette</SectionTitle>
+                    <Box maxW = "100%" d = {{ xl : 'block', md : 'none', sm : 'none', lg : 'block' }}>
+                        <Swiper
+                            slidesPerView = {3}
+                            spaceBetween = {30}
+                            grabCursor = {true}
+                            pagination = {{
+                                clickable : true
+                            }}
+                            modules = {[Pagination]}
+                        >
+                            {Tab.map((item) => {
+                                return (
+                                    <SwiperSlide>
+                                        <Image src = {item} alt = "photo" width = {'870px'} height = {'750px'} />
+                                    </SwiperSlide>
+                                );
+                            })}
+                        </Swiper>
+                    </Box>
+                    
+                    <Box maxW = "100%" display = {{ xl : 'none', md : 'block', sm : 'block', lg : 'none' }}>
+                        <Swiper>
+                            {Tab.map((item) => {
+                                return (
+                                    <SwiperSlide>
+                                        <Image src = {item} alt = "photo" />
+                                    </SwiperSlide>
+                                );
+                            })}
+                        </Swiper>
+                    </Box>
                 </Section>
             </Container>
         </>

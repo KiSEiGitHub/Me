@@ -11,7 +11,7 @@
     },
     {
       "Photo": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80",
-      "Title" : "HardwareSeven",
+      "Title": "HardwareSeven",
       "Description": {
         "fr": "Un site d'ecommerce sur les composants d'un PC",
         "en": "A group project based on the hardware components e-shop theme"
@@ -19,13 +19,22 @@
       "Link": "/Projets/HardwareSeven"
     },
     {
-      "Photo" : "https://images.unsplash.com/photo-1546992772-3318f1f3a1be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1418&q=80",
-      "Title" : "Snake",
-      "Description" : {
-        "fr" : "Un projet de groupe fait en C, le jeu du snake !",
-        "en" : "A C project made for the snake game"
+      "Photo": "https://images.unsplash.com/photo-1546992772-3318f1f3a1be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1418&q=80",
+      "Title": "Snake",
+      "Description": {
+        "fr": "Un projet de groupe fait en C, le jeu du snake !",
+        "en": "A C project made for the snake game"
       },
-      "Link" : "/Projets/Snake"
+      "Link": "/Projets/Snake"
+    },
+    {
+      "Photo": "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80",
+      "Title": "Leveling",
+      "Description": {
+        "fr": "Le réseau social du gaming",
+        "en": "A C project made for the snake game"
+      },
+      "Link": "/Projets/Leveling"
     }
   ]
 }
