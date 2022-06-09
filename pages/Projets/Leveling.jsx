@@ -36,10 +36,24 @@ const Leveling = () => {
     const Width = '690px';
     const Height = '820px';
     
-    const Tab = [
-        Chat, GallerieJeu, GroupeDesc, GroupeDis, GroupeMem, Jeu, ModifierProfil,
-        ModifierProfil2, Accueil, Inscrip, Connexion, UserAmis, USerAmis2,
-        UserDesc, UserGroupe, UserJeux, Rank
+    const Oui = [
+        { id : 1, img : Chat },
+        { id : 2, img : GallerieJeu },
+        { id : 3, img : GroupeDesc },
+        { id : 4, img : GroupeDis },
+        { id : 5, img : GroupeMem },
+        { id : 6, img : Jeu },
+        { id : 7, img : ModifierProfil },
+        { id : 8, img : ModifierProfil2 },
+        { id : 9, img : Accueil },
+        { id : 10, img : Inscrip },
+        { id : 11, img : Connexion },
+        { id : 12, img : UserAmis },
+        { id : 13, img : USerAmis2 },
+        { id : 14, img : UserDesc },
+        { id : 15, img : UserGroupe },
+        { id : 16, img : UserJeux },
+        { id : 17, img : Rank }
     ];
     
     return (
@@ -86,10 +100,10 @@ const Leveling = () => {
                             }}
                             modules = {[Pagination]}
                         >
-                            {Tab.map((item) => {
+                            {Oui.map((item) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Image src = {item} alt = "photo" width = {Width} height = {Height} />
+                                    <SwiperSlide key = {item.id}>
+                                        <Image src = {item.img} alt = "photo" width = {Width} height = {Height} />
                                     </SwiperSlide>
                                 );
                             })}
@@ -98,10 +112,10 @@ const Leveling = () => {
                     
                     <Box maxW = "100%" display = {{ xl : 'none', md : 'block', sm : 'block', lg : 'none' }}>
                         <Swiper>
-                            {Tab.map((item) => {
+                            {Oui.map((item) => {
                                 return (
-                                    <SwiperSlide>
-                                        <Image src = {item} alt = "photo" />
+                                    <SwiperSlide key={item.id}>
+                                        <Image src = {item.img} alt = "photo" />
                                     </SwiperSlide>
                                 );
                             })}
