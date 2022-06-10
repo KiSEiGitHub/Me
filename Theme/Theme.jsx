@@ -76,6 +76,12 @@ const components = {
                 maxW : '100%',
                 h    : 'auto',
             },
+            'Reading'        : {
+                maxW : '1000px',
+                h    : 'auto',
+                pos  : 'relative',
+                mt   : '60px'
+            },
             'Main-Projet'    : {
                 mt : '100px',
                 p  : '0 35px',

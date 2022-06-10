@@ -2,7 +2,7 @@
   "Techno": {
     "Para": "La cybersécurité consiste à protéger les ordinateurs, les serveurs, les appareils mobiles, les systèmes électroniques, les réseaux et les données contre les attaques malveillantes. On l’appelle également sécurité informatique ou sécurité des systèmes d'information. Vous pouvez la rencontrer dans de nombreux contextes, de l'informatique d'entreprise aux terminaux mobiles. Elle peut être divisée en plusieurs catégories."
   },
-  "Juri" : {
-    "Para" : "Oui"
+  "Juri": {
+    "Metier": "L’Administrateur système et réseau est chargé de la mise en place et du suivi du SI au sein des grandes entreprises, des SSII ou des administrations. Il a précisément pour mission de gérer l’utilisation du réseau de l’organisation (performances, optimisation, migration, évolution, sécurité…), les postes de travail (accès à internet, mots de passe, sauvegardes), d’intégrer les nouveaux équipements au réseau. Il est important pour lui d’identifier clairement ses missions et ses responsabilités afin de prendre toutes les mesures utiles pour ne pas encourir de risques."
   }
 }

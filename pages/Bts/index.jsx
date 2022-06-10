@@ -52,7 +52,7 @@ const Bts = () => {
                         <Linkk href = {'/Bts/VeilleTech'}>
                             cybersécurité
                         </Linkk>
-                        {' '} pour ma veille technologique.
+                        .
                     </Para>
                 </Section>
                 
@@ -67,10 +67,10 @@ const Bts = () => {
                     </Para>
                     <Para mt = {2}>
                         J&apos;ai décidé de parler de la {' '}
-                        <Linkk href = {'/'}>
-                            ...
+                        <Linkk href = {'/Bts/VeilleJur'}>
+                            responsabilité des administrateurs système et réseau
                         </Linkk>
-                        {' '} pour ma veille juridique.
+                        .
                     </Para>
                 </Section>
             </Container>
