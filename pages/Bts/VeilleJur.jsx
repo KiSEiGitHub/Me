@@ -99,7 +99,7 @@ const VeilleJur = () => {
                         }}>Cours d’appel arrêt du 17 décembre 2002 :</span>{' '}
                         renforce le rôle des administrateurs système et réseau
                         quant à la nécessité de surveiller le trafic sur les réseaux de leurs entreprises. La découverte
-                        de la consultation d'un salarié, des sites pedophiles c'est faite à l'occasion d'une opération
+                        de la consultation d&apos;un salarié, des sites pedophiles c&apos;est faite à l&apos;occasion d&apos;une opération
                         de maintenance.
                     </Para>
                 </Section>
