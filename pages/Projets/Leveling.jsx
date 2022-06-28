@@ -70,6 +70,12 @@ const Leveling = () => {
                         <Tag mr = {2}>Stack</Tag>
                         <span>PHP / SQL / HTML / CSS</span>
                     </Box>
+                    <Box mb = {4}>
+                        <Tag mr = {2}>Site</Tag>
+                        <ExtLink href={'https://herokuleveling.herokuapp.com/'}>
+                            Leveling
+                        </ExtLink>
+                    </Box>
                 </Section>
                 
                 <Section delay = {0.5}>
@@ -114,7 +120,7 @@ const Leveling = () => {
                         <Swiper>
                             {Oui.map((item) => {
                                 return (
-                                    <SwiperSlide key={item.id}>
+                                    <SwiperSlide key = {item.id}>
                                         <Image src = {item.img} alt = "photo" />
                                     </SwiperSlide>
                                 );
